@@ -1,0 +1,1247 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="#一、    按钮 ##1.1  Button 按钮间隙：React不输出元素键换行符，同一行按钮可能紧挨着，为保持间隙，可以放在ButtonToolbar中。 按钮标签：DOM根据你提供的属性自动选择，有href，按钮使用a元素，否则button 跨浏览器兼容：当连接标签渲染为a时，不能被disabled，需要pointer-events:none; 让链接阻止被聚焦，最新浏览器支持    Bu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/React-Bootstrap学习/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#一、    按钮 ##1.1  Button 按钮间隙：React不输出元素键换行符，同一行按钮可能紧挨着，为保持间隙，可以放在ButtonToolbar中。 按钮标签：DOM根据你提供的属性自动选择，有href，按钮使用a元素，否则button 跨浏览器兼容：当连接标签渲染为a时，不能被disabled，需要pointer-events:none; 让链接阻止被聚焦，最新浏览器支持    Bu">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-04T08:27:51.581Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#一、    按钮 ##1.1  Button 按钮间隙：React不输出元素键换行符，同一行按钮可能紧挨着，为保持间隙，可以放在ButtonToolbar中。 按钮标签：DOM根据你提供的属性自动选择，有href，按钮使用a元素，否则button 跨浏览器兼容：当连接标签渲染为a时，不能被disabled，需要pointer-events:none; 让链接阻止被聚焦，最新浏览器支持    Bu">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        首页
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-React-Bootstrap学习" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>#一、    按钮</p>
+<p>##1.1  Button</p>
+<p><strong>按钮间隙</strong>：React不输出元素键换行符，同一行按钮可能紧挨着，为保持间隙，可以放在ButtonToolbar中。</p>
+<p><strong>按钮标签</strong>：DOM根据你提供的属性自动选择，有href，按钮使用a元素，否则button</p>
+<p><strong>跨浏览器兼容</strong>：当连接标签渲染为a时，不能被disabled，需要pointer-events:none; 让链接阻止被聚焦，最新浏览器支持</p>
+<table>
+<thead>
+<tr>
+<th>Button属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>默认false</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>作为块状元素</td>
+</tr>
+<tr>
+<td>bsClass</td>
+<td>默认btn</td>
+</tr>
+<tr>
+<td>bsSize</td>
+<td>lg/large/sm/small/xs/xsmall</td>
+</tr>
+<tr>
+<td>bsStyle</td>
+<td>默认default，success/warning/danger/info/primary/link</td>
+</tr>
+<tr>
+<td>componentClass/disabled/href/onClick</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>默认button, reset/submit。 HTML按钮类型属性</td>
+</tr>
+</tbody>
+</table>
+<p>##1.2  按钮群组ButtonGroup、ButtonToolbar</p>
+<p>把一系列Button组合在一起</p>
+<p>​       DropdownButton放在ButtonGroup中嵌套（不支持带分隔线的下拉按钮）</p>
+<table>
+<thead>
+<tr>
+<th>ButtonGroup属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block</td>
+<td>块显示属性，<strong>仅在</strong> <strong>vertical</strong> <strong>属性时使用 </strong> <strong>?</strong></td>
+</tr>
+<tr>
+<td>bsClass/vertical</td>
+<td></td>
+</tr>
+<tr>
+<td>justified</td>
+<td>false, 自适应父容器？</td>
+</tr>
+</tbody>
+</table>
+<p>##1.3  下拉列表按钮DropdownButton、SplitButton、Dropdown</p>
+<p>SplitButton（带竖向分割线）</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;DropdownButton title=<span class="string">'buttonName'</span> key=&#123;&#125; id=&#123;&#125;&gt;</span><br><span class="line">	&lt;MenuItem eventKey=<span class="string">'1'</span>&gt;操作&lt;<span class="regexp">/MenuItem&gt;				&lt;MenuItem eventKey='2'&gt;另一操作&lt;/</span>MenuItem&gt;</span><br><span class="line">	&lt;MenuItem divider /&gt;</span><br><span class="line">	&lt;MenuItem eventKey=<span class="string">'4'</span>&gt;分组&lt;<span class="regexp">/MenuItem&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>DropdownButton&gt;</span><br><span class="line"><span class="comment">/* 也可将DropdownButton换成SplitButton，按钮显示有差别*/</span></span><br></pre></td></tr></table></figure>
+<p>​       Dropdown自定义Toggle、Munu得到想要的样式</p>
+<table>
+<thead>
+<tr>
+<th>DropdownButton属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsSize/bsStyle/disable/id(必须)/onSelect/title(必须)</td>
+<td></td>
+</tr>
+<tr>
+<td>dropup</td>
+<td>菜单在按钮上方显示</td>
+</tr>
+<tr>
+<td>noCaret</td>
+<td>去除三角指示</td>
+</tr>
+<tr>
+<td>onClose</td>
+<td>下拉框关闭的回调</td>
+</tr>
+<tr>
+<td>onToggle</td>
+<td>视情况发生变化的回调（Boolean isOpen）{}</td>
+</tr>
+<tr>
+<td>open</td>
+<td>是否可见</td>
+</tr>
+<tr>
+<td>pullRight</td>
+<td>菜单与下拉框右侧对齐</td>
+</tr>
+<tr>
+<td>role</td>
+<td>MenuItem时，导致下拉框看起来像菜单项，而不是按钮</td>
+</tr>
+<tr>
+<td>rootColseEvent</td>
+<td>组件区域外操作关闭时间 click、mousedown</td>
+</tr>
+<tr>
+<td>componenetClass</td>
+<td>默认ButtonGroup，使用此组件的定制化样式</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>SplitButton属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsSize/bsStyle/componentClass/disable/dropup /id/onClick/onSelect/onToggle/open/pullRight/role/rootCloseEvent/title</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>href</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>toggleLabel</strong></td>
+<td>toggle辅助标签，未设定时使用title值</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>DropDown属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children</td>
+<td>Dropdown子节点，可以是Dropdown.Toggle、Dropdown.Menu</td>
+</tr>
+<tr>
+<td>其他如上通用</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> instance = (</span><br><span class="line">	&lt;Dropdown id=<span class="string">'dropdown-custom-1'</span>&gt;</span><br><span class="line">        &lt;Button &gt;just btn&lt;<span class="regexp">/Button&gt;</span></span><br><span class="line"><span class="regexp">        &lt;Dropdown.Toggle bsStyle='success' /</span>&gt;</span><br><span class="line">        &lt;Dropdown.Menu className=<span class="string">''</span>&gt;</span><br><span class="line">            &lt;MenuItem eventKey=<span class="string">'1'</span>&gt;Action&lt;<span class="regexp">/Dropdown.Menu&gt;</span></span><br><span class="line"><span class="regexp">            &lt;MenuItem divider /</span>&gt;</span><br><span class="line">        &lt;<span class="regexp">/Dropdown.Menu&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>Dropdown&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>##1.4  菜单项MenuItem</p>
+<p>下拉框中的菜单项目，支持基础链接属性，href、traget、title，也支持bootstrap MenuItem属性功能，如：header/divider/disabled/eventKey/onSelect；回调参数参数为event，eventKey</p>
+<table>
+<thead>
+<tr>
+<th>MenuItem属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>高亮显示菜单项</td>
+</tr>
+<tr>
+<td>bsClass</td>
+<td>默认dropdown</td>
+</tr>
+<tr>
+<td>disable/divider/eventKey/onClick/onSelect</td>
+<td></td>
+</tr>
+<tr>
+<td>header</td>
+<td>菜单项的风格显示为标题头标签，描述一组菜单项</td>
+</tr>
+<tr>
+<td>href</td>
+<td>HTMlhref</td>
+</tr>
+</tbody>
+</table>
+<p>#二、    弹出层</p>
+<p> react-overlays引用的文件名</p>
+<p>##2.1 对话框Modal</p>
+<p>​    弹出式对话框，又称模态对话框组件</p>
+ <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> instance = (</span><br><span class="line">	&lt;div className=<span class="string">'static-modal'</span>&gt;</span><br><span class="line">        &lt;Modal.Dialog&gt;</span><br><span class="line">        	&lt;Modal.Header&gt;</span><br><span class="line">            	&lt;Modal.Title&gt;对话框标题&lt;<span class="regexp">/Modal.Title&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>Modal.Header&gt;</span><br><span class="line">            &lt;Modal.Body&gt;</span><br><span class="line">            	主题内容</span><br><span class="line">            &lt;<span class="regexp">/Modal.Body&gt;</span></span><br><span class="line"><span class="regexp">            &lt;Modal.Footer&gt;</span></span><br><span class="line"><span class="regexp">            	&lt;Button&gt;取消&lt;/</span>Button&gt;</span><br><span class="line">                &lt;Button bsStyle=<span class="string">'primary'</span>&gt;保存&lt;<span class="regexp">/Button&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>Modal.Footer&gt;</span><br><span class="line">        &lt;<span class="regexp">/Modal.Dialog&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>内嵌对话框需要将上述div的className增加样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*container 相对定位，backdrop绝对定位 */</span></span><br><span class="line"><span class="selector-class">.modal-container</span> &#123; <span class="attribute">position</span>: relative; &#125;</span><br><span class="line"><span class="selector-class">.modal-container</span> <span class="selector-class">.modal</span>, <span class="selector-class">.modal-container</span> <span class="selector-class">.moadl-backdrop</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Modal属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation</td>
+<td>开关时的动画，true</td>
+</tr>
+<tr>
+<td>autoFocus</td>
+<td>为true时，自动加工焦点迁移到自身，关闭时回到原来焦点</td>
+</tr>
+<tr>
+<td>backdrop</td>
+<td>背景点击消失属性，static不触发onHide，true/false</td>
+</tr>
+<tr>
+<td>bsClass/show/onEnter/onEntered /onEntering/onExit/onExited/onExiting/onHide</td>
+<td></td>
+</tr>
+<tr>
+<td>bsSize</td>
+<td>尺寸，lg/large/sm/small</td>
+</tr>
+<tr>
+<td>dislogClassName</td>
+<td>对话框DOM节点的样式</td>
+</tr>
+<tr>
+<td><strong>dialogComponentClass</strong></td>
+<td>组件类型，提供对话框内容标记功能。想使用自己的样式和标记生成定制对话框特别有用，ModalDialog</td>
+</tr>
+<tr>
+<td>enforceFocus</td>
+<td>为true时，对话框消失，界面失去焦点</td>
+</tr>
+<tr>
+<td>keyboard</td>
+<td>esc关闭对话框，bool</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Modal.Header属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>aria-label</strong></td>
+<td>提供了存取关闭按钮标签的属性，‘Close’</td>
+</tr>
+<tr>
+<td>bsClass</td>
+<td>默认‘modal-header’</td>
+</tr>
+<tr>
+<td>closeButton</td>
+<td>是否包含关闭按钮，false</td>
+</tr>
+<tr>
+<td><strong>onHide</strong></td>
+<td>按下关闭的回调，Modal内部使用时，自动到父对话框的onHide</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Modal.Title属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认‘modal-title’</td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td>使用此组件提供的定制化样式，‘h4’</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Modal.Body属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如上</td>
+<td>默认值：‘modal-body’、‘div’</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Modal.Footer属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>如上</td>
+<td>默认：‘modal-footer’、‘div’</td>
+</tr>
+</tbody>
+</table>
+<p>##2.2 提示工具Tooltip</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> tooltip = &lt;Tooltip id='tip-top'&gt;提示信息&lt;/Tooltip&gt;</span><br><span class="line"><span class="keyword">const</span> instance = (</span><br><span class="line">	&lt;OverlayTrigger palcement=<span class="string">'left'</span> overlay=&#123;tooltip&#125;&gt;</span><br><span class="line">    	&lt;Button bsStyle=<span class="string">'default'</span>&gt;光标移到我上面&lt;<span class="regexp">/Button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>OverlayTrigger&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Overlay Trigger属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation</td>
+<td>动画，false，（bool\</td>
+<td>elementType）</td>
+</tr>
+<tr>
+<td>defaultOverlayShown</td>
+<td>Overlay初始是否显示，false</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>显示、隐藏的延迟，毫秒</td>
+</tr>
+<tr>
+<td>delayHide/delayShow</td>
+<td></td>
+</tr>
+<tr>
+<td>onEnter/onEntering/onEntering /onExit/onExiting/onExited</td>
+<td>回调</td>
+</tr>
+<tr>
+<td>overlay（<strong>required</strong>）</td>
+<td>Overlay的元素或正文</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>overlay方向，right，上下左右</td>
+</tr>
+<tr>
+<td>rootClose</td>
+<td>点击外部是否触发onHide，false</td>
+</tr>
+<tr>
+<td>trigger</td>
+<td>指示动作是否触发Overlay可视，[‘hover’,’focus’]，（可直接写type）</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tooltip属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrowOffsetLeft</td>
+<td>Tooltip箭头设为左部</td>
+</tr>
+<tr>
+<td>arrowOffsetLeft</td>
+<td>设为右部</td>
+</tr>
+<tr>
+<td>bsClass/placement</td>
+<td>默认：‘tooltip’、‘right’</td>
+</tr>
+<tr>
+<td>id（<strong>required</strong>）</td>
+<td>html id属性</td>
+</tr>
+<tr>
+<td>positionLeft</td>
+<td>Tooltip设为左部位置</td>
+</tr>
+<tr>
+<td>positionTop</td>
+<td>顶部位置</td>
+</tr>
+</tbody>
+</table>
+<p>##2.3 弹出框 Popover</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> popover =(</span><br><span class="line">	&lt;Popover id=<span class="string">'popover-1'</span> title=<span class="string">'弹出'</span>&gt;</span><br><span class="line">    	内容！！！</span><br><span class="line">    &lt;<span class="regexp">/Popover&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">const instance = (</span></span><br><span class="line"><span class="regexp">	&lt;OverlayTrigger trigger='click' placement='left' overlay=&#123;popover&#125;&gt;</span></span><br><span class="line"><span class="regexp">    	&lt;Button&gt;点击我&lt;/</span>Button&gt;</span><br><span class="line">    &lt;<span class="regexp">/OverlayTrigger&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>trigger行为，不鼓励hover、focus来触发，触屏设备不易使用</p>
+</blockquote>
+<p>​    容器内触发，需要container属性。</p>
+<table>
+<thead>
+<tr>
+<th>Popover属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>标题内容</td>
+</tr>
+<tr>
+<td>如上Tooltip</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-4-定制化弹出层-Overlay"><a href="#2-4-定制化弹出层-Overlay" class="headerlink" title="2.4 定制化弹出层 Overlay"></a>2.4 定制化弹出层 Overlay</h2><p>使用Overlay代替Tooltip或Popover.</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(</span><br><span class="line">	&lt;div style=&#123;&#123;<span class="attr">position</span>: relative;&#125;&#125;&gt;</span><br><span class="line">    	&lt;Button ref=<span class="string">'target'</span> onClick=&#123;<span class="keyword">this</span>.showOverlay&#125;&gt;</span><br><span class="line">            点击我</span><br><span class="line">        &lt;<span class="regexp">/Button&gt;</span></span><br><span class="line"><span class="regexp">        &lt;Overlay container=&#123;this&#125; target=&#123;()=&gt;ReactDOM.findDOMNode(this.refs.target)&#125;&gt;</span></span><br><span class="line"><span class="regexp">            &lt;Popover id='popover1'&gt;弹出信息&lt;/</span>Popover&gt;</span><br><span class="line">        &lt;<span class="regexp">/Overlay&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Overlay属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation/onEnter/onEntering /onEntered/onExit/onExiting /onExited/show/placement</td>
+<td></td>
+</tr>
+<tr>
+<td>onHide</td>
+<td>设置rootClose，将不触发onHide</td>
+</tr>
+<tr>
+<td>rootClase</td>
+<td>点击外部区域是否触发onHide，false</td>
+</tr>
+</tbody>
+</table>
+<p>#三、    导航</p>
+<p>##3.1 页面导航Nav、NavItem</p>
+<p>样式：pills、tabs</p>
+<p>功能：disabled（禁用）、stacked（堆叠、垂直）、justified（100%宽度）</p>
+<p>Nav、NavItem、NavDropdown（下拉，子项MenuItem，divider属性线）</p>
+<p>​       Nav：</p>
+<p>activeHref               导航条目的href与此一致显示为激活</p>
+<p>activeKey                 导航条目的eventKey与此匹配的激活，优先级高于activeHref</p>
+<p>bsClass                      默认‘nav’，目的是为组件提供新的，非boot样式</p>
+<p>bsStyle                      tabs、pills，组件可视或上下文相关的属性</p>
+<p>justified                    默认false，宽度填充父类</p>
+<p>navbar                      在Navbar使用时应用对齐风格，Navbar自动设置</p>
+<p>onSelect                   选中时的回调fn(Ang eventKey, SyntheticEvent event)</p>
+<p>pullLeft/pullRight  默认false，浮动Nav至左侧，navbar为true，必要上下文会被添加</p>
+<p>role                            在TabContainer中，缺省设为tablist</p>
+<p>stacked                     默认false，垂直</p>
+<p>​       NavItem：</p>
+<p>Active                       默认false</p>
+<p>Disabled                   默认false</p>
+<p>eventKey</p>
+<p>href</p>
+<p>onClick</p>
+<p>onSelect</p>
+<p>role</p>
+<p>##3.2 导航条Navbar</p>
+<p>​       站点或页面处理顶部导航操作的基础组件，支持<strong>bootstrap</strong> <strong>样式，使用驼峰法</strong>，并将navbar移除</p>
+<p>Header、Toggle、Brand、Collapse作为Navbar的静态资源（Navbar.Header 做组件）</p>
+<p>​       响应式导航条：移动设备易于使用，Navbar.Toggle加入导航条部，内容放在Navbar.Collapse组件中，Navbar自动展示收缩。</p>
+<p>​       defaultExpanded属性确定导航条开展的·扩展状态，collapseOnSelect使得导航条在用户选择一个条目中自动收起。使用expanded、onToggle，可以很好控制收起行为。</p>
+<p>表单：Navbar.Form（给表单组件增加边距、对齐属性）</p>
+<p>文本和非导航链接Navbar.Link、Navbar.Text</p>
+<table>
+<thead>
+<tr>
+<th>Navbar属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsStyle</td>
+<td>默认default，还有inverse（黑色）</td>
+</tr>
+<tr>
+<td>collapseOnSelect</td>
+<td>默认false，</td>
+</tr>
+</tbody>
+</table>
+<p>##3.3 路径导航</p>
+<p>##3.4 Tabs</p>
+<p>Tabs、Tab、TabContainer、TabContent、TabPane</p>
+<p>​       每个导航条eventKey与Tab.Pane的eventKey管理，内容定义在Tab.Container中，就可以了。</p>
+<table>
+<thead>
+<tr>
+<th>Tabs属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activeKey</td>
+<td>controlled by onSelect，defaultActiveKey值相同，高亮，表示激活</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>默认true</td>
+</tr>
+<tr>
+<td>bsStyle</td>
+<td>默认tabs， pills</td>
+</tr>
+<tr>
+<td>id</td>
+<td></td>
+</tr>
+<tr>
+<td>onSelect</td>
+<td>controls activeKey Tab选中回调</td>
+</tr>
+<tr>
+<td>unmountExit</td>
+<td>默认false，当前Tab不可视，从DOM删除</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tab属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animation</td>
+<td>显示隐藏Tab.Pane是否用动画，false/true/具体动画</td>
+</tr>
+<tr>
+<td>Aria-labelledby</td>
+<td></td>
+</tr>
+<tr>
+<td>bsClass</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td></td>
+</tr>
+<tr>
+<td>eventKey</td>
+<td>区别Tab.Pane唯一标识</td>
+</tr>
+<tr>
+<td>id</td>
+<td></td>
+</tr>
+<tr>
+<td>onEnter/onEntered/onEntering/onExit/onExited/onExiting</td>
+<td>animation不为false，定义动画回调</td>
+</tr>
+<tr>
+<td>tabClassName</td>
+<td>相关NavItem使用的样式名称</td>
+</tr>
+<tr>
+<td>title</td>
+<td></td>
+</tr>
+<tr>
+<td>unmuintOnExit</td>
+<td>当前Tab不可视，DOM移除</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tab.Container属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activeKey/id/onSelect</td>
+<td></td>
+</tr>
+<tr>
+<td>generateChildId</td>
+<td>默认（eventKey, type）=&gt;<code>${this.props.id}-${type}-${key}</code>，为NavItem、TabPane返回唯一id的纯函数（type：tab/pane）</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TabContent属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animation</td>
+<td>所有TabPane的动画策略false/true/具体动画</td>
+</tr>
+<tr>
+<td>bsClass/unmountOnExit</td>
+<td></td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td>默认div，使用一个此组件提供的定制化样式</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TabPane属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同Tab</td>
+</tr>
+</tbody>
+</table>
+<p>#四、    页面布局</p>
+<p>##4.1 网络系统Grid、Row、Col、Clearfix</p>
+<p>清除修订：不加Clearfix， sm（768&lt;=width&lt;=992px）,视图显示不正确</p>
+<table>
+<thead>
+<tr>
+<th>Grid属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认container，自定义组件基础CSS及前缀</td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td>默认div，组件使用的定制化类名</td>
+</tr>
+<tr>
+<td>fluid</td>
+<td>默认false，任何宽度变为全宽布局</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Row属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认row</td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td>默认div</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Col属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass/componentClass</td>
+<td></td>
+</tr>
+<tr>
+<td>lg</td>
+<td>设备大于1200px的列 col-lg-</td>
+</tr>
+<tr>
+<td>lgHidden/lgOffset/lgPull/lgPush</td>
+<td>位移列数，col-lg-offset</td>
+</tr>
+<tr>
+<td>md</td>
+<td>中型设备&gt;992px col-md-</td>
+</tr>
+<tr>
+<td>mdHidden(如上lg)</td>
+<td></td>
+</tr>
+<tr>
+<td>sm</td>
+<td>小型设备&lt;768px col-sm-</td>
+</tr>
+<tr>
+<td>xs</td>
+<td>极小设备&lt;768px， col-xs-</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Clearfix属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认clearfix</td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td></td>
+</tr>
+<tr>
+<td>visibleLgBlock</td>
+<td>大型设备使用clearfix，相当于增加样式visible-lg-block</td>
+</tr>
+<tr>
+<td>visibelMdBlock/visibleSmBlock/visibleXsBlock</td>
+</tr>
+</tbody>
+</table>
+<p>##4.2 欢迎页Jumbotron</p>
+<p>使用大型视窗显示站点内容</p>
+<table>
+<thead>
+<tr>
+<th>Jumbotron属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认jumbotron</td>
+</tr>
+<tr>
+<td>componentClass</td>
+</tr>
+</tbody>
+</table>
+<p>##4.3 页面标题PageHeader</p>
+<p>​       可以使用h1缺省的small元素，也可以使用其他组件</p>
+<table>
+<thead>
+<tr>
+<th>PageHeader属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+</tr>
+</tbody>
+</table>
+<p>##4.4 列表ListGroup、ListGroupItem</p>
+<p>#五、    表单</p>
+<p>##5.1 FormGroup、FormControl、COntrolLabel</p>
+<p>FormControl将一个表单控件渲染成bootstrap样式，FormGroup以相应留白封装Form控件，支持标签、帮助内容、校验状态，为可存取，需设置FormGroup中的controlId，使用ControlLabel设定标签</p>
+<p>​       FormControl直接渲染input或其他组件，如需存取未受控的FormControl值，需设定ref属性，调用ReactDOM.findDOMNode（ref）取出对应节点。</p>
+<p>​       组件包含大量FormGroup，最好构造新组件封装。</p>
+<table>
+<thead>
+<tr>
+<th>FormGroup属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsSize</td>
+<td>lg、large、sm、small</td>
+</tr>
+<tr>
+<td>bsClass</td>
+<td>默认form-group</td>
+</tr>
+<tr>
+<td>controlId</td>
+<td>设置FormControl的id，以及FormControl.Label的htmlFor</td>
+</tr>
+<tr>
+<td>validationState</td>
+<td>success/warning/error/null</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>FromControl属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认form-control</td>
+</tr>
+<tr>
+<td>bsSize/componentClass</td>
+<td>没显示指定时，FormGroup中使用的controlId</td>
+</tr>
+<tr>
+<td>id</td>
+<td></td>
+</tr>
+<tr>
+<td>inputRef</td>
+<td>input元素的ref内容，取值只能为函数inputRef={ ref =&gt; {this.input = ref;}}</td>
+</tr>
+<tr>
+<td>type</td>
+<td>类名为input，使用</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ControlLabel属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认control-label</td>
+</tr>
+<tr>
+<td>htmlFor</td>
+<td>如果没申明，使用controlId</td>
+</tr>
+<tr>
+<td>srOnly</td>
+<td>默认false</td>
+</tr>
+</tbody>
+</table>
+<p>##5.2 支持的控件Checkbox、Radio、FormControl.Static、HelpBlock</p>
+<p>​       FieldGroup表单布局中支持的控件。FormControl.Static用于静态文本。Inline表明渲染控件在同一行</p>
+<table>
+<thead>
+<tr>
+<th>Checkbox属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认checkbox</td>
+</tr>
+<tr>
+<td>disabled/inline/inputRef</td>
+<td></td>
+</tr>
+<tr>
+<td>validationState</td>
+<td>inline没设置时才生效，success，warning，error，null</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Radio属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认radio</td>
+</tr>
+<tr>
+<td>disabled/inline/inputRef/validationState</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>FormControl.Static属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认form-control-static</td>
+</tr>
+<tr>
+<td>componentClass</td>
+<td>默认‘p’</td>
+</tr>
+</tbody>
+</table>
+<p>帮助区域：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass</td>
+<td>默认help-block</td>
+</tr>
+</tbody>
+</table>
+<p>##5.3 表单布局Form</p>
+<p>一行内的表单用<form inline="">代替form,JSX取出行间留白，宽度默认width：auto</form></p>
+<p>​       水平表单：<form horizontal="">，然后用<col>对齐标签、控件</form></p>
+<table>
+<thead>
+<tr>
+<th>Form属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>horizontal</td>
+<td>默认false</td>
+</tr>
+<tr>
+<td>bsClass(‘form’)/componentClass(‘form’)</td>
+<td></td>
+</tr>
+<tr>
+<td>inline</td>
+<td>默认false</td>
+</tr>
+</tbody>
+</table>
+<p>##5.4 输入组InputGroup、InputGroup.Action、InputGroup.Button</p>
+<table>
+<thead>
+<tr>
+<th>InputGroup属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass (‘input-group’)/bsSize</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>InputGroup.Addon/Button属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass (‘input-group-addon/btn’)</td>
+</tr>
+</tbody>
+</table>
+<p>##5.5 检验状态FormControl.Feedback</p>
+<p>​       validationState设置为success、warning、error中一个，指示校验状态，设为null/undefined 隐藏校验状态，Feedback有校验状态时，显示一个反馈图标</p>
+<table>
+<thead>
+<tr>
+<th>FormControl.Feedback属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bsClass(‘form-control-feedback’)</td>
+</tr>
+</tbody>
+</table>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-05-10T07:09:04.749Z" itemprop="datePublished">2018-05-10</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2018/05/10/Redux学习/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    (无标题)
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/05/10/React 学习/" class="ui tiny button">
+                    
+                    (无标题)
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#2-4-定制化弹出层-Overlay"><span>2.4 定制化弹出层 Overlay</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

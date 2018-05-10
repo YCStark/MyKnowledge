@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/Redux学习/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-12T11:44:21.142Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        首页
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-Redux学习" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>#一、基础</p>
+<p><strong>三大原则：</strong>单一数据源（store）、State只读、纯函数执行修改</p>
+<p>##一、使用Redux的场景：</p>
+<p>​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。</p>
+<p>从组件角度看：</p>
+<p>​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另一个组件的状态。</p>
+<p>##二、设计思想：</p>
+<p>​       Web应用是一个状态机，视图与状态一一对应</p>
+<p>​       所有状态，保存在一个对象里面</p>
+<p>##三、基本概念</p>
+<p>###3.1 Store</p>
+<p>​       <strong>保存数据</strong>的地方，看成一个容器，只有一个。</p>
+<p>​       Import { createStore } from ‘redux’;</p>
+<p>​       Const store = createStore( fn );     //用于生成Store</p>
+<p>接受一个函数做参数，返回新生成的Store对象。</p>
+<p>四个方法：getState、dispatch、subscribe、replaceReducer</p>
+<p>###3.2 State</p>
+<p>​       对象包含所有数据。如果想得到某时间点数据，<strong>对**</strong>Store<strong>**生成快照</strong>。这种时点的数据集合，叫State。</p>
+<p>​       Const state = store.getState();       //拿到当前时刻的State</p>
+<p>###3.3 Action</p>
+<p>State变化，导致View变化。但用户只能接触到View变化，所以State变化必须是View变化导致的。Action是View发出的通知，表示State就要变化了。</p>
+<p>​       Action对象，type属性是必须的，表示Action的名称。<strong>Action**</strong>描述当前发生的事情，改变<strong><strong>State</strong></strong>的唯一方法就是使用<strong><strong>Action</strong></strong>，它会运送数据到<strong>**Store</strong></p>
+<p>​       Const action = { type: ‘ADD_TODO’,payload: ‘Learn Redux’ };</p>
+<p>###3.4 Action Creator</p>
+<p>​       定义一个函数生成Action，该函数叫Action Creator</p>
+<p>​       Function addTodo(text) { </p>
+<p>​              Return { type: ‘添加TODO’, text }</p>
+<p>}</p>
+<p>Const action = addTodo(‘Learn Redux’);</p>
+<p>###3.5store.dispatch()</p>
+<p>​       View发出Action的唯一方法。Dispatch接收Action对象做参数，发送出去。</p>
+<p>​       store.dispatch( { type: ‘ADD_TODO’,payload: ‘Learn Redux’ } );</p>
+<p>###3.6 Reducer（保持纯净）</p>
+<p>​       Store收到Action后，必须给一个新的State，这样View才会变化。<strong>State**</strong>的计算过程称为<strong><strong>Reducer</strong></strong>。**接收Action和当前State作为参数，返回新的State。（遇到未知的Action，返回原State）</p>
+<p>​       Const reducer = function(state, action) {</p>
+<p>​       Returnnew_state;</p>
+<p>}</p>
+<p>​       实际应用中，Reducer不用手动调用，dispatch方法会触发Reducer自动执行。因此生成Store时，Reducer传入createStore方法。</p>
+<p>​       Const store = createStore(reducer);</p>
+<p>​       <strong>作为数组的**</strong>reduce<strong>**方法做参数</strong></p>
+<p>###3.7 纯函数</p>
+<p>​       Reducer函数最重要的特征：<strong>纯函数。</strong>因此，最好State设成只读，好处：任何时候，与某个View对应的State总是一个不变的对象。</p>
+<p>###3.8store.subscribe()</p>
+<p>​       设置监听函数，State发生变化，就自动执行。</p>
+<p>​       Store.subscribe( listener );</p>
+<p>​       只要把View的更新函数（即render或setState）放入listener，就能实现自动渲染。该方法返回一个函数，调用该函数解除监听。</p>
+<p>##四、Store实现</p>
+<p>​       Import { createStore } from ‘redux’;</p>
+<p>​       Let { subscribe, dispatch, getState } =createStore( reducer );</p>
+<p>createStore方法的第二个参数，表示State的最初状态，通常是服务器给出的。</p>
+<p>​       Let store = createStore( todoApp,window.STATE_FROM_SERVER )；</p>
+<p>该应用的状态初始值，如果提供了，就会覆盖Reducer默认初始值。</p>
+<p>##五、Reducer拆分</p>
+<p>​       不同函数负责State的不同属性变化，最终合并成一个大的Reducer。</p>
+<p>​       Const chatReducer = ( state =defaultState, action = {}) =&gt; {</p>
+<p>​              Return { </p>
+<p>​       charLog:chatLog( state.chatLog, action),</p>
+<p>​       statusMesage:statusMessage( state.statusMessage, action)</p>
+<p>} }</p>
+<p>​       Redux提供了<strong>combineReducers</strong>方法，用于Reducer拆分。</p>
+<p>​       Import { combineReducers } from ‘redux’;</p>
+<p>​       Const chatReducer = combineReducers({</p>
+<p>​       chatLog,</p>
+<p>​       statusMesage</p>
+<p>}) </p>
+<p>该写法的前提是State的属性名与子Reducer同名</p>
+<p>#####combineReducers</p>
+<p>​    combineReducers辅助函数的作用是把一个由不同reducer函数作为value的object，合并成一个最终的reducer函数，然后就可以对这个reducer调用createStore。</p>
+<p>​    合并后的reducer可以调用各子reducer，并把它们的结果合并成一个state对象，state对象的结构由传入的多个reducer的key觉定。</p>
+<blockquote>
+<p>子reducer返回的state对象，只表示当前state key值的一部分</p>
+</blockquote>
+<ol>
+<li>规则</li>
+</ol>
+<ul>
+<li>所有未匹配到的action，必须把它接收到的第一个参数也就是那个state原封不动返回？</li>
+<li>永远不能返回undefined。如有抛异常</li>
+<li>如传入state为undefined，一定要返回对应reducer 初始的state，初始state禁止使用undefined</li>
+</ul>
+<ol start="2">
+<li>实现</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> combineReeducers1 = <span class="function">(<span class="params">obj</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">//内部具体代码</span></span><br><span class="line">    <span class="keyword">var</span> finalState = &#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state, action</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> obj) &#123;</span><br><span class="line">        	<span class="comment">//根据key属性值调用function（state.属性名，action）</span></span><br><span class="line">        	finalState[p] = obj[p](state[p], action);</span><br><span class="line">        </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> finalState;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> reducer</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rootReducer = conbineReducers1(&#123;<span class="attr">key</span>: value&#125;);</span><br></pre></td></tr></table></figure>
+<p>##六、工作流程</p>
+<p>​                              </p>
+<p>##七、中间件middleware</p>
+<p>dispatch方法中，在发出Action和执行Reducer之间，添加其他功能。</p>
+<p>​       applyMiddleware（）作为createStore的第三个参数。</p>
+<p>将所有中间件生成数组，依次执行</p>
+<p>Action -&gt;middleware1 -&gt; middleware2 -&gt; reducer</p>
+<p>##八、异步操作</p>
+<p>​       同步操作发出一种Action即可，异步操作需要发三种Action。</p>
+<p>操作发起、成功、失败。</p>
+<p>两种写法：</p>
+<ol>
+<li><p>{type: ‘FETCH_POSTS’, status: ‘error/success’, error: ‘Oops’/response: {…} }</p>
+</li>
+<li><p>{type: ‘REQUEST/FAILURE/SUCCESS’, error: ‘Oops’/response: {…}}</p>
+</li>
+</ol>
+<p>除了Action种类不同，异步操作State也要改造</p>
+<p>State = {isFetching: true, didInvalidate: true, lateUpdate: ‘xxx’, … }</p>
+<p>isFetching表示是否在抓取数据，didInvalidate是否过时，lateUpdate最后更新时间。</p>
+<p>##九、 Redux-thunk</p>
+<p>（操作开始、结束都发Action）</p>
+<p>​       componentDidMount（）{</p>
+<p>​              const { dispatch, selectedPost } =this.props</p>
+<p>​              dispatch(fetchPosts ( selectedPost) ) </p>
+<p>}      加载成功后（componentDidMount），送出了（dispatch方法）一个Action，向服务器请求数据（fetchPosts），fetchPosts就是Action Creator</p>
+<p>​       Const <a href="">fetchPosts </a>=postTitle =&gt; ( dispatch,  getstate)=&gt; {</p>
+<p>​       Dispatch(requestPosts( postTitle));</p>
+<p>​       Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
+<p>​              .then(response =&gt; response.json() )</p>
+<p>​              .then(json =&gt; dispatch( receivePosts( postTitle, json )))</p>
+<p>}</p>
+<p>//使用方法一</p>
+<p>Store.dispatch(fetchPosts( ‘reactjs’ ))</p>
+<p>//使用方法二</p>
+<p>Store.dispatch(fetchPosts( ‘reactjs’ )).then(() =&gt; console.log(store.getState()) )</p>
+<p>​       fetchPosts是一个Action Creator动作生成器·，返回一个函数。</p>
+<p>注意：</p>
+<ol>
+<li><p>FetchPosts返回函数，普通Action Creator返回对象</p>
+</li>
+<li><p>返回函数参数是dispatch、getState两个Redux方法，普通的返回Acton内容</p>
+</li>
+<li><p>返回函数中，先发Action（requestPosts（postTitle））表开始</p>
+</li>
+<li><p>异步结束后，发一个Action（receivePosts），表结束</p>
+</li>
+</ol>
+<p>Store.dispatch 正常情况下，参数只能是对象，这是就得使用中间件redux-thunk，改造dispatch，使得后者可以接受函数作为参数。</p>
+<p>​       Import thunk from ‘redux-thunk’</p>
+<p>​       Import { createStore, applyMiddleware }from ‘redux’</p>
+<p>​       Const store == createStore( reducer,applyMiddleware（thunk）)</p>
+<p>##十、redux-promise中间件</p>
+<p>​       另一种异步操作解决方案：Action Creator返回一个Promise对象。</p>
+<p>​       Import promiseMiddleware from ‘redux-promise’</p>
+<p>​       //其他如上</p>
+<p>两种写法：</p>
+<ol>
+<li>返回值是Promise对象</li>
+</ol>
+<p>Const fetchPosts =( dispatch, postTitle ) =&gt; new Promise( function ( resolve, reject ) {</p>
+<p>​       Dispatch( requestPosts( postTitle));</p>
+<p>​      Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
+<p>​              .then( response =&gt; { type: ‘’,payload: response.json()});</p>
+<p>})</p>
+<ol start="2">
+<li>Payload属性是一个Promise对象，这需要从redux-actions引入createAction方法</li>
+</ol>
+<p>Import {createAction } from ‘redux-actions’</p>
+<p>componentDidMound(){</p>
+<p>​       const { dispatch, selectPost } =this.props</p>
+<p>​       dispatch(requestPosts( selectedPost ));</p>
+<p>​       dispatch( createAction( ‘FETCH_POSTS’,</p>
+<p>​       fetch(<code>/API/${postTitle}.json</code>).then(response =&gt; response.json() )</p>
+<p>));</p>
+<p>}      第二个dispatch方法是异步Action，只有操作接受，这个Action才会实际发出。createAction第二个参数必须是Promise对象</p>
+<p>#二、注意点</p>
+<p>##一、    HTML模板</p>
+<body><br><br>​       <div id="’root’"></div><br><br>​       &lt;script type=’text/babel’&gt;   //our code goes here!<br><br><br><br></body>
+
+<ol>
+<li><p>Script标签type属性为text/babel，这是React的独有语法，凡是用到的地方都得加上。</p>
+</li>
+<li><p>必须加载的三个库：react.js、react-dom.js、Browser.js。borwser.js作用是把JSX转为JS语法，很耗时间，上线时，将它放到服务器完成。</p>
+</li>
+</ol>
+<p>##二、    this.props.children</p>
+<p>没有子节点，值为undefined；一个子节点，object；多个，array。</p>
+<p>React.Children 用来便利子节点，不用考虑children的数据类型。</p>
+<p>##三、    PropTypes</p>
+<p>用于验证组件属性是否符合要求， 不符合则控制台报错</p>
+<p>##四、    获取真实Dom节点</p>
+<p>组件并不是真实DOM节点，所有变动都在虚拟DOM上发生，再将变动部分反映到真实DOM上，这算法叫DOM diff。</p>
+<p>​       组件获取真实DOM节点，需要ref属性</p>
+<p>例： 组件有个文本输入框，虚拟DOM拿不到用户输入，文本框必须有个ref属性。This.refs.[refName]会返回真实DOM节点。但是不许等到虚拟DOM插入文档后才能使用，否则报错</p>
+<p>##五、    表单</p>
+<p>用户在表单填入内容，属于用户跟组件的互动，不能用this.props读取，而要定义onChange的回调，用event.target.value读取。</p>
+<p>##六、    生命周期</p>
+<p>Mounting：已插入真实DOM</p>
+<p>Updating：已被重新渲染</p>
+<p>Unmounting：已移除真实DOM</p>
+<p>##七、    Ajax</p>
+<p>ComponentDidMount设置Ajax请求，请求成功，在setState重新渲染UI。</p>
+<p>#三、React-Redux </p>
+<p>React-Redux将左右组件分为两大类</p>
+<p>##一、    UI组件</p>
+<p>Presentationalcomponent</p>
+<p>​       只负责UI呈现，不带任何业务逻辑；没有状态；数据都由this.props提供；不使用任何Redux的API。</p>
+<p>​       纯组件</p>
+<p>##二、    容器组件</p>
+<p>Containercomponent</p>
+<p>​       负责管理数据和业务逻辑,不负责UI呈现;带有内部状态;使用Redux的API.</p>
+<p>​       React-Redux规定,UI组件都由用户提供,容器组件则是由React-Redux自动提供</p>
+<p>##三、connect</p>
+<p>​       用于UI组件生成容器组件</p>
+<p>Import { connect }from ‘react-redux’</p>
+<p>ConstVisibleTodoList = connect（）（TodoList）；</p>
+<p>​       TodoList 为UI组件，VisibleTodoList通过React-Redux自动生成的容器组件。需要的信息：</p>
+<ol>
+<li><p>输入逻辑：外部数据（state对象）如何转换UI组件的参数</p>
+</li>
+<li><p>输出逻辑；动作如何变为Action对象，从UI传出去</p>
+</li>
+</ol>
+<p>Import { connect }from ‘react-redux’</p>
+<p>ConstVisibleTodoList = connect(</p>
+<p>​       mapStateToProps,</p>
+<p>​       mapDispatchToProps</p>
+<p>)( TodoList )</p>
+<p>##四、mapStateToProps</p>
+<p>​       建立一个从外部state对象到UI组件props对象的映射关系。返回一个对象，每个键值对就是一个映射</p>
+<p>Const mapStateToProps = （state（，props）） =&gt; {</p>
+<p>​       Return{ todos: getVisibleTodos( state.todos, state.visibilityFilter )}</p>
+<p>}</p>
+<p>接收state为参数，返回对象。getVisibleTodos从state计算todos的值。</p>
+<p>​       订阅Store，state更新时会自动执行，重新计算UI组件参数，从而触发UI组件重新渲染（<strong>使用**</strong>props<strong>**作为参数，如果容器组件参数发生变化，也会重新渲染</strong>？）</p>
+<p>​       <strong>作用：只绑定当前组件相关的**</strong>state<strong>**属性，可以保证没有额外的</strong></p>
+<p>##五、mapDispatchToProps</p>
+<p>​       建立UI组件到store.dispatch的映射。定义了哪些操作应当作为Action传给Store。可以是函数或者对象。</p>
+<p>Const mapDispatchToProps = ( dispatch,ownProps ) =&gt; {</p>
+<p>​       Return{ onClick: () =&gt; {</p>
+<p>​       Dispatch({type: ‘Action_Name’, filter:ownProps.filter });}</p>
+<p>};</p>
+<p>}</p>
+<p>返回的对象每个键值对都是一个映射，定义UI组件的参数，怎样发Action。    </p>
+<p>​       如果是一个对象，键名是对应UI组件的同名参数，键值应该是函数，作为Action creator，返回的Action由Redux自动发出</p>
+<p>Const mapDispatchToProps = {</p>
+<p>​       onClick:(filter) =&gt; { type: ‘Action_Name’, filter: filter }</p>
+<p>}</p>
+<p>##六、<provider>组件 </provider></p>
+<p>​       原理：React组件的context属性。</p>
+<p>作用：让容器组件拿到state（state对象作为参数传入容器组件，容器组件可能在很深的层级，state传递下去很麻烦）。</p>
+<p>Import { Provider } from ‘react-redux’</p>
+<p>Import todoApp from ‘./reducers’</p>
+<p>Let store = createStore(todoApp)</p>
+<p>Render(</p>
+<p>​       &lt;Providerstore={store}&gt; <app>,</app></p>
+<p>​       Document.getElementById(‘root’)</p>
+<p>)</p>
+<p>​       App所有子组件默认都可以拿到state</p>
+<p>##七、常用函数</p>
+<ol>
+<li>createStore（reducer，[initState, enhancer]）</li>
+</ol>
+<p>enhancer：中间件</p>
+<ol start="2">
+<li>combineRecuder（reducers）</li>
+</ol>
+<p>多个子函数合并后，相当于整体函数为state特定字段进行映射产生特定函数。</p>
+<ol start="3">
+<li>applyMiddleware（…middlewares）</li>
+</ol>
+<p>输入middlewares数组，返回函数，函数以creteStore为参数。</p>
+<ol start="4">
+<li>compose（…function）</li>
+</ol>
+<p>从右到左组合多个函数，</p>
+<p>Compose（funcA, funcB, funcC）等价于compose(funcA(funcB(funcC())))</p>
+<p>为了避免深度嵌套函数时，代码的向右偏移。</p>
+<ol start="5">
+<li><providerstore> 和 connect（[mapStateToProps],[mapDispatchToProps],[mergeProps], [options]）</providerstore></li>
+</ol>
+<p>）</p>
+<p>#四、Redux库文件</p>
+<p>##一、    react-redux</p>
+<p>##二、    redux-devtools</p>
+<p>实时监控Redux状态书的Store</p>
+<p>​       Redux-devtools</p>
+<p>​       Redux-log-monitor</p>
+<p>​       Redux-dock-monitor</p>
+<p>创建DevTools组件</p>
+<p>Import {createDevTools } from ‘redux-devtools’</p>
+<p>Import LogMonitorfrom ‘redux-devtools-log-monitor’//(组件)</p>
+<p>Const DevTools =createDevTools( // JSX代码 )</p>
+<p>​       createDevTools 创建的组件有个特殊的静态方法instrument（），返回一个store增强器，放在<a href="">applyMiddleware</a>后，因为apply可能存在异步行为，为确保说有actions显示在store中。</p>
+<p>##三、    redux-thunk</p>
+<p>统一异步和同步的调用方式，把异步过程放在action级别解决，对component没有影响</p>
+<p>##四、    react-router-redux</p>
+<p>协调 Redux和React Router两个库，加强了Router库中history这个实例，允许history中接受到的变化反映到state去。</p>
+<p>​       History + store（redux） -&gt; react-router-redex -&gt; 加强history -&gt; react-router</p>
+<p>​       所有页面导航、App导航，加强版history会首先将新的路径通过Redux Store传递，然后通过React Router更新组件树。</p>
+<p>​       <strong>查看导航事件</strong></p>
+<p> History.listen监听加强版history</p>
+<p>​       Const history= syncHistoryWithStore（browserHistory，store）</p>
+<p>​       History.listen( location =&gt;analyticsService.track(location.pathname ))</p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-05-10T07:09:04.770Z" itemprop="datePublished">2018-05-10</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>前一篇</a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/05/10/React-Bootstrap学习/" class="ui tiny button">
+                    
+                    (无标题)
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,959 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Ant Design一、快速上手1.1 安装安装npm i antd-init –g 创建项目antd-init  自动安装npm依赖 运行npm start( localhost:8000) 构建部署npm run build (入口文件构建到dist目录中) 目前支持所有浏览器和IE9+，对于IE系列浏览器许使用babel-polyfill和babel-plugin-transform-run">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/Ant Design/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Ant Design一、快速上手1.1 安装安装npm i antd-init –g 创建项目antd-init  自动安装npm依赖 运行npm start( localhost:8000) 构建部署npm run build (入口文件构建到dist目录中) 目前支持所有浏览器和IE9+，对于IE系列浏览器许使用babel-polyfill和babel-plugin-transform-run">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-26T12:46:42.251Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Ant Design一、快速上手1.1 安装安装npm i antd-init –g 创建项目antd-init  自动安装npm依赖 运行npm start( localhost:8000) 构建部署npm run build (入口文件构建到dist目录中) 目前支持所有浏览器和IE9+，对于IE系列浏览器许使用babel-polyfill和babel-plugin-transform-run">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        首页
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-Ant Design" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h1 id="Ant-Design"><a href="#Ant-Design" class="headerlink" title="Ant Design"></a>Ant Design</h1><h2 id="一、快速上手"><a href="#一、快速上手" class="headerlink" title="一、快速上手"></a>一、快速上手</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><p>安装<code>npm i antd-init –g</code></p>
+<p>创建项目<a href="https://github.com/ant-design/antd-init/" target="_blank" rel="noopener">antd-init</a></p>
+<p> 自动安装npm依赖</p>
+<p>运行<code>npm start</code>( localhost:8000)</p>
+<p>构建部署<code>npm run build</code> (入口文件构建到dist目录中)</p>
+<pre><code>目前支持所有浏览器和IE9+，对于IE系列浏览器许使用babel-polyfill和babel-plugin-transform-runtime
+</code></pre><blockquote>
+<pre><code>IE8 （antd2不再支持）Reac有问题可访问[https://github.com/xcatliu/react-ie8](https://github.com/xcatliu/react-ie8)
+</code></pre></blockquote>
+<h3 id="1-2-按需加载"><a href="#1-2-按需加载" class="headerlink" title="1.2 按需加载"></a>1.2 按需加载</h3><pre><code>使用import { Button } from ‘andt’ 引入antd的所有模块，影响应用的网络性能。
+</code></pre><p> 改进：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import Button from ‘antd/lib/button’;</span><br><span class="line"></span><br><span class="line">import‘antd/lib/button/style’;</span><br></pre></td></tr></table></figure>
+<p>如果使用babel，可以通过babel-plugin-import来按需加载，任然可以这么写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Button &#125; from ‘antd’;	//插件帮你转换</span><br></pre></td></tr></table></figure>
+<h2 id="二、项目实战"><a href="#二、项目实战" class="headerlink" title="二、项目实战"></a>二、项目实战</h2><pre><code>基于React推出了最佳实践dva：基于React和Redux的轻量应用框架，概念来自elm，支持side effects、热替换、动态加载、react-native、SSR等
+</code></pre><h2 id="三、在create-react-app中应用"><a href="#三、在create-react-app中应用" class="headerlink" title="三、在create-react-app中应用"></a>三、在create-react-app中应用</h2><pre><code>全局安装crete-react-app，然后直接新建`create-react-app antd-demo`
+</code></pre><h3 id="3-1-引入antd"><a href="#3-1-引入antd" class="headerlink" title="3.1 引入antd"></a>3.1 引入antd</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i –s antd</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-高级配置"><a href="#3-2-高级配置" class="headerlink" title="3.2 高级配置"></a>3.2 高级配置</h3><p>按需加载</p>
+<p> <a href="https://github.com/timarney/react-app-rewired" target="_blank" rel="noopener">react-app-rewired</a> —-对create-react-app进行自定义配置的社区解决方案</p>
+<blockquote>
+<p>babel-plugin-import按需加载组件代码和样式的babel插件</p>
+</blockquote>
+<h2 id="四、Components"><a href="#四、Components" class="headerlink" title="四、Components"></a>四、Components</h2><h3 id="4-1-Button"><a href="#4-1-Button" class="headerlink" title="4.1 Button"></a>4.1 Button</h3><pre><code>四种类型：主按钮、次按钮、虚线按钮、危险按钮（主按钮同一区域最多一次，danger antd2.7支持）primary、default、dashed、danger
+</code></pre><ul>
+<li>尺寸：size：large大、small小、不设置-中</li>
+<li>加载中：loading属性</li>
+<li>按钮组合：放入Button.Group中</li>
+<li>图标：icon属性（也有Icon组件）</li>
+<li>不可用状态：disabled</li>
+<li>幽灵按钮：glost，背景透明，按钮内容反色antd2.7</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>glost/icon/loading/size/type/onClick</td>
+<td>如上</td>
+</tr>
+<tr>
+<td>href</td>
+<td>行为与a一致，渲染为a标签</td>
+</tr>
+<tr>
+<td>htmlType</td>
+<td>button原生type值</td>
+</tr>
+<tr>
+<td>shape</td>
+<td>按钮形状，circle圆形</td>
+</tr>
+<tr>
+<td>target</td>
+<td>a链接属性target，href存在生效</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>除以上属性，额外直接传到button；渲染内容时，span会包围。</p>
+</blockquote>
+<h3 id="4-2-Icon"><a href="#4-2-Icon" class="headerlink" title="4.2 Icon"></a>4.2 Icon</h3><pre><code>命名规范：实心/描线用-o区分；命名顺序[图标名]-[形状?]-[描线?]-[方向?]
+
+使用：type,公网访问，可以[本地部署](https://ant.design/components/icon-cn/)
+</code></pre><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spin</td>
+<td>是否有旋转动画，false</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>样式</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>图标类型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-3-Grid-栅格"><a href="#4-3-Grid-栅格" class="headerlink" title="4.3 Grid 栅格"></a>4.3 Grid 栅格</h3><pre><code>24栅格系统，划分后的信息区称之为‘盒子’
+</code></pre><p>行（row）、列（col）：col可以作为row的直接元素；.col-8 表示八格；超过24另起一行。</p>
+<ul>
+<li><strong>Flex</strong> <strong>布局</strong>：</li>
+</ul>
+<ul>
+<li>对齐方式：align：top、middle、buttom、</li>
+</ul>
+<ul>
+<li>Flex排序：order改变顺序</li>
+</ul>
+<ul>
+<li>响应式布局：xs/sm/md/lg/xl/xxl</li>
+</ul>
+<ul>
+<li>其他属性响应式：内嵌到 xs、sm等中 xs=</li>
+</ul>
+<ul>
+<li>栅格配置：间距 Row上gutter属性</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Row属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>align</td>
+<td>垂直对齐方式top、middle、botton</td>
+</tr>
+<tr>
+<td>gutter</td>
+<td>间隔，可写成{ xs: 8, sm: 16 }</td>
+</tr>
+<tr>
+<td>jstify</td>
+<td>flex布局水平排列方式：start/end/center/space-around/space-between</td>
+</tr>
+<tr>
+<td>type</td>
+<td>布局模式，flex</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Col属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offset</td>
+<td>向右偏移数</td>
+</tr>
+<tr>
+<td>order</td>
+<td>栅格顺序，flex布局有效</td>
+</tr>
+<tr>
+<td>pull</td>
+<td>向左移动的格数</td>
+</tr>
+<tr>
+<td>push</td>
+<td>向右</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p> xs（576）sm（&gt;576）md（&gt;768）lg（&gt;992）xl（&gt;1200）xxl（&gt;1600）</p>
+</blockquote>
+<h3 id="4-4-布局"><a href="#4-4-布局" class="headerlink" title="4.4 布局"></a>4.4 布局</h3><ul>
+<li><p>Layout：布局容器，可嵌套如下和Layout本身</p>
+</li>
+<li><p>Header：顶部布局，可嵌套任何，只能放在Layout中</p>
+</li>
+<li><p>Sider：侧边栏，可嵌套任何，只能放在Layout中</p>
+</li>
+<li><p>Content：内容，可嵌套任何，只能放在Layout中</p>
+</li>
+<li><p>Footer：底部布局，可嵌套任何，只能放在Layout中</p>
+<p>| Layout属性        | 说明                              |<br>| ————— | ——————————- |<br>| className/style | 通用                              |<br>| hasSider        | 子元素有Sider，一般不指定，可用于服务端渲染时避免样式闪动 |</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Layout.Sider属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>className/style/width（200）</td>
+<td></td>
+</tr>
+<tr>
+<td>breakpoint</td>
+<td>触发响应式布局的断点{md：’768px’}</td>
+</tr>
+<tr>
+<td>collapsed</td>
+<td>当前收起状态</td>
+</tr>
+<tr>
+<td>collapseWidth</td>
+<td>收缩宽度，为0出现特殊trigger</td>
+</tr>
+<tr>
+<td>collapsible</td>
+<td>是否可收起</td>
+</tr>
+<tr>
+<td>defaultCollapsed</td>
+<td>是否默认收起</td>
+</tr>
+<tr>
+<td>reverseArrow</td>
+<td>折叠提示箭头方向，Sider左边时可用</td>
+</tr>
+<tr>
+<td>trigger</td>
+<td>自定义trigger，设置null，隐藏trigger</td>
+</tr>
+<tr>
+<td>onCollapse</td>
+<td>展开收起的回调（collapse, type）=&gt; {}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-5-Affix固钉"><a href="#4-5-Affix固钉" class="headerlink" title="4.5 Affix固钉"></a>4.5 Affix固钉</h3><p>将页面元素钉在可视范围。常用语侧边菜单和按钮。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Affix,Button &#125; from ‘antd’;</span><br><span class="line">&lt;AffixoffsetBottom=&#123;0&#125;&gt;</span><br><span class="line">      &lt;Button type=”primary”&gt;&lt;/Button&gt;</span><br><span class="line">&lt;/Affix&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>用target属性设置Affix 监听滚动事件的元素，默认为window
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">offsetBottom</td>
+<td>距窗口底部到达指定偏移量后触发</td>
+</tr>
+<tr>
+<td style="text-align:left">offsetTop</td>
+<td>距窗口顶部。。。。</td>
+</tr>
+<tr>
+<td style="text-align:left">target</td>
+<td>监听滚动事件的元素，返回对应DOM的函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onChange</td>
+<td>固定状态改变时触发的回调</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-6-Breadcrumb-面包屑"><a href="#4-6-Breadcrumb-面包屑" class="headerlink" title="4.6 Breadcrumb 面包屑"></a>4.6 Breadcrumb 面包屑</h3><p>显示当前页面在系统层级结构中的位置，并能向上返回。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Breadcrumb&gt;</span><br><span class="line">       &lt;Breadcrumb.Item&gt;Home&lt;/Breadcrumb.Item&gt;</span><br><span class="line">       …</span><br><span class="line">&lt;/Breadcrumb&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>itemRender</td>
+<td>自定义链接函数，和reac-touter配置使用（route, params, routes, paths）=&gt; ReactNode</td>
+</tr>
+<tr>
+<td>params</td>
+<td>路由参数object</td>
+</tr>
+<tr>
+<td>routes</td>
+<td>router的路由栈信息[]</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>分隔符自定义 string\</td>
+<td>ReactNode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-7-Dropdown下拉菜单"><a href="#4-7-Dropdown下拉菜单" class="headerlink" title="4.7 Dropdown下拉菜单"></a>4.7 Dropdown下拉菜单</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Menu,Dropdown &#125; from ‘antd’;</span><br><span class="line">const menu =`&lt;Menu&gt;</span><br><span class="line">       			&lt;Menu.Iteem&gt;菜单子项&lt;/Menu.Item&gt;</span><br><span class="line">			&lt;/Menu&gt;`;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">       &lt;Dropdown overlay=&#123;menu&#125;&gt;Hover me&lt;/Dropdown&gt;</span><br><span class="line">, moundNode)</span><br><span class="line">//========按钮下拉菜单</span><br><span class="line">&lt;Dropdown.ButtononClick=’’ overlay=&#123;menu&#125;&gt;</span><br><span class="line">	Dropdown</span><br><span class="line">&lt;/Dropdown&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disable</td>
+<td>是否禁用</td>
+</tr>
+<tr>
+<td>getPopupContainer</td>
+<td></td>
+</tr>
+<tr>
+<td>overlay</td>
+<td>菜单Menu组件</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>菜单弹出位置：bottomLeft(默认)/topLeft…..</td>
+</tr>
+<tr>
+<td>trigger</td>
+<td>触发下拉，数组，click，hover，contextMenu</td>
+</tr>
+<tr>
+<td>type</td>
+<td>和[Button][4.1 Button]一致</td>
+</tr>
+<tr>
+<td>visible</td>
+<td>菜单是否显示</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>点击左侧按钮回调</td>
+</tr>
+<tr>
+<td>onVisibleChange</td>
+<td>显示状态改变时调用，参数为visible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-8-Menu导航菜单"><a href="#4-8-Menu导航菜单" class="headerlink" title="4.8 Menu导航菜单"></a>4.8 Menu导航菜单</h3><p> 水平布局：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;Menu selectedKeys=&#123;[this.state.current]&#125; mode=&apos;horizontal&apos;&gt;</span><br><span class="line">	&lt;Menu.Item key=&apos;mail&apos; disabled&gt;</span><br><span class="line">		&lt;Icon type=&apos;mail&apos; /&gt;Navigation One</span><br><span class="line">	&lt;/Menu.Item&gt;</span><br><span class="line">	&lt;SubMenu title=&#123;&lt;span&gt;Navigation Two --Submenu&lt;/span&gt;&#125;&gt;</span><br><span class="line">		&lt;MenuItemGroup title=&apos;Item 1&apos;&gt;</span><br><span class="line">			&lt;Menu.Item key=&apos;setting:1&apos;&gt;option 1&lt;/Menu.Item&gt;							&lt;Menu.Item key=&apos;setting:2&apos;&gt;option 2&lt;/Menu.Item&gt;</span><br><span class="line">		&lt;/MenuItemGrout&gt;</span><br><span class="line">	&lt;/SubMenu&gt;</span><br><span class="line">&lt;/Menu&gt;</span><br></pre></td></tr></table></figure>
+<p>垂直布局：<code>mode=&#39;inline&#39;</code></p>
+<p> 缩起内嵌菜单：<code>inlineCollapsed=true</code></p>
+<p> 只展开一个子菜单：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;Menu mode=&apos;inline&apos; openKeys=&#123;this.state.openKeys&#125; onOpenChange=&#123;this.openChange&#125;&gt;</span><br><span class="line">&lt;!-- </span><br><span class="line">	openChange 获取点击的key，然后setState，修改openKeys的值</span><br><span class="line">--&gt;</span><br><span class="line">	&lt;SubMenu key=&apos;sub1&apos; title=&apos;&lt;span&gt;Navigation one&lt;/span&gt;&apos;&gt;</span><br><span class="line">		&lt;Menu.Item key=&apos;1&apos;&gt;option 1&lt;/Menu.Item&gt;</span><br><span class="line">	&lt;/SubMenu&gt;</span><br><span class="line">	&lt;SubMenu key=&apos;sub2&apos; title=&apos;&lt;span&gt;Navigation two&lt;/span&gt;&apos;&gt;</span><br><span class="line">		&lt;Menu.Item key=&apos;2&apos;&gt;option 2&lt;/Menu.Item&gt;</span><br><span class="line">	&lt;/SubMenu&gt;</span><br><span class="line">&lt;/Menu&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Menu属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultOpenKeys</td>
+<td>初始展开的SubMenu的key数组</td>
+</tr>
+<tr>
+<td>defaultSelectedKeys</td>
+<td>初始选中的key，stirng[]</td>
+</tr>
+<tr>
+<td>forceSubMenuRender</td>
+<td>在子菜单展示前渲染DOM，false</td>
+</tr>
+<tr>
+<td>inlineCollapsed</td>
+<td>inline菜单是否收起</td>
+</tr>
+<tr>
+<td>inlineIndent</td>
+<td>inline模式缩进宽度，24</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>类型：垂直、水平、内嵌<code>vertical</code>（默认） <code>vartical-right</code> <code>horizontal</code> <code>inline</code></td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>是否对选，false</td>
+</tr>
+<tr>
+<td>openKeys</td>
+<td>展开SubMenu的key数组，string[]</td>
+</tr>
+<tr>
+<td>selectable</td>
+<td>是否能选中，true</td>
+</tr>
+<tr>
+<td>selectedKeys</td>
+<td>当前选中的key数组，stirng[]</td>
+</tr>
+<tr>
+<td>style</td>
+<td>根节点样式</td>
+</tr>
+<tr>
+<td>subMenuCloseDelay</td>
+<td>离开子菜单后关闭延时，0.1</td>
+</tr>
+<tr>
+<td>subMenuOpenDelay</td>
+<td>开启延时，0</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>主题颜色，light、dark</td>
+</tr>
+<tr>
+<td>onClick</td>
+<td>点击MenuItem的回调function({item,key,keyPath})</td>
+</tr>
+<tr>
+<td>onDeselect</td>
+<td>取消选中调用，mulitiple生效，function({item,key,selectedKeys})</td>
+</tr>
+<tr>
+<td>onOpenChange</td>
+<td>SubMenu开关的回调，function(openkeys: string[])</td>
+</tr>
+<tr>
+<td>onSelect</td>
+<td>选中调用，function({item,key,selectedkeys})</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>More options in  <a href="https://github.com/react-component/menu#api" target="_blank" rel="noopener">rc-menu</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Menu.Item属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disabled</td>
+<td>是否禁用，false</td>
+</tr>
+<tr>
+<td>key</td>
+<td>item的唯一标志，string</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Menu.SubMenu属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chidren</td>
+<td>子菜单菜单数组，Array&lt;MenuItem\</td>
+<td>SubMenu&gt;</td>
+</tr>
+<tr>
+<td>disabled/key/title</td>
+<td></td>
+</tr>
+<tr>
+<td>onTitleClick</td>
+<td>点击子菜单function({key, dom})</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Menu.ItemGroup属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>children/tit</td>
+</tr>
+</tbody>
+</table>
+<p>Menu.Divider 菜单分割线</p>
+<h3 id="4-9-Pagination-分页"><a href="#4-9-Pagination-分页" class="headerlink" title="4.9 Pagination 分页"></a>4.9 Pagination 分页</h3><h3 id="4-10-Steps-步骤条"><a href="#4-10-Steps-步骤条" class="headerlink" title="4.10 Steps 步骤条"></a>4.10 Steps 步骤条</h3><h3 id="4-11-AutoComplete自动完成"><a href="#4-11-AutoComplete自动完成" class="headerlink" title="4.11 AutoComplete自动完成"></a>4.11 AutoComplete自动完成</h3><p>输入框展示可选内容，供选择</p>
+<h3 id="4-12-Cascader-级联选择器"><a href="#4-12-Cascader-级联选择器" class="headerlink" title="4.12 Cascader 级联选择器"></a>4.12 Cascader 级联选择器</h3><h3 id="4-13-Checkbox-多选框"><a href="#4-13-Checkbox-多选框" class="headerlink" title="4.13 Checkbox 多选框"></a>4.13 Checkbox 多选框</h3><p>​    多选框组和布局</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/* options = [&#123;label: &apos;apple&apos;,value: &apos;apple&apos;&#125;,&#123;label: &apos;pear&apos;,value:&apos;pear&apos;&#125;]</span><br><span class="line">*/</span><br><span class="line">&lt;Checkbox.Group options=&#123;options&#125; defaultValue=&#123;[&apos;apple&apos;]&#125; /&gt;</span><br><span class="line">&lt;Checkbox.Group&gt; </span><br><span class="line">	&lt;Row&gt;</span><br><span class="line">		&lt;Col span=&#123;8&#125;&gt;&lt;Checkbox value=&apos;A&apos;&gt;A&lt;/Checkbox&gt;&lt;/Col&gt;		</span><br><span class="line">		&lt;Col span=&#123;8&#125;&gt;&lt;Checkbox value=&apos;B&apos;&gt;B&lt;/Checkbox&gt;&lt;/Col&gt;</span><br><span class="line">	&lt;/Row&gt;</span><br><span class="line">&lt;/Checkbox.Group&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Checkbox属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoFocus</td>
+<td>自动获取焦点，false</td>
+</tr>
+<tr>
+<td>checked/defaultChecked</td>
+<td>选中/初始选中，false</td>
+</tr>
+<tr>
+<td>indeterminate</td>
+<td>只负责样式控制，false</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>变化时回调，function(e:Event)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Checkbox Group属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultValue/options/value</td>
+<td>string[]</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>function(checkedValue)</td>
+</tr>
+</tbody>
+</table>
+<p>方法；<code>blur()</code> 移除焦点<code>focus()</code>获取焦点</p>
+<h3 id="4-14-DatePicker日期选择"><a href="#4-14-DatePicker日期选择" class="headerlink" title="4.14 DatePicker日期选择"></a>4.14 DatePicker日期选择</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;DatePicker onChange=&#123;onChange&#125; /&gt;</span><br><span class="line">&lt;MonthPicker onChange=&#123;onChange&#125; placeholder=&apos;select&apos; /&gt;</span><br><span class="line">&lt;RangePicker onChange=&#123;onChange&#125; /&gt;</span><br><span class="line">&lt;WeekPicker onChange=&#123;onChange&#125; /&gt;</span><br></pre></td></tr></table></figure>
+<p>四组件共同API：</p>
+<table>
+<thead>
+<tr>
+<th>共同参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allowClear</td>
+<td>是否显示清除按钮，true</td>
+</tr>
+<tr>
+<td>autoFocus</td>
+<td>自动获取焦点，false</td>
+</tr>
+<tr>
+<td>className/size/style/disabled</td>
+<td></td>
+</tr>
+<tr>
+<td>dateRender</td>
+<td>自定义日期单元格内容，function(currentDate, today) =&gt;  ReactNode</td>
+</tr>
+<tr>
+<td>disabledDate</td>
+<td>(currentDate) =&gt; boolean</td>
+</tr>
+<tr>
+<td>getCalendarContainer</td>
+<td>定义浮层容器，默认为div，function(trigger)</td>
+</tr>
+<tr>
+<td>locale</td>
+<td>国际化配置，object</td>
+</tr>
+<tr>
+<td>open</td>
+<td>是否展开，boolean</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td></td>
+</tr>
+<tr>
+<td>popupStyle</td>
+<td>弹出日历样式，object</td>
+</tr>
+<tr>
+<td>dropdownClassName</td>
+<td>弹出日历的class</td>
+</tr>
+<tr>
+<td>onOpenChange</td>
+<td>弹出、关闭的回调，function(status)</td>
+</tr>
+</tbody>
+</table>
+<p>共同方法：<code>blur()</code> <code>focus()</code></p>
+<table>
+<thead>
+<tr>
+<th>DatePicker属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultValue</td>
+<td></td>
+</tr>
+<tr>
+<td>disabledTime</td>
+<td>不可选择的时间，function(date)</td>
+</tr>
+<tr>
+<td>format</td>
+<td>日期格式，‘YYYY-MM-DD’</td>
+</tr>
+<tr>
+<td>renderExtraFooter</td>
+<td>面版额外页脚，() =&gt; ReactNode</td>
+</tr>
+<tr>
+<td>showTime</td>
+<td>时间选择TimePicker</td>
+</tr>
+<tr>
+<td>showTimeDefault</td>
+<td>设置日期默认时分秒，moment</td>
+</tr>
+<tr>
+<td>showToday</td>
+<td>展示‘今天’按钮，true</td>
+</tr>
+<tr>
+<td>value</td>
+<td>日期，moment</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>回调，function(date, dateString)</td>
+</tr>
+<tr>
+<td>onOk</td>
+<td>点击确定的回调</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>MonthPicker属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultValue</td>
+<td>默认日期，moment</td>
+</tr>
+<tr>
+<td>format/value/onChange(同上)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>WeekPicker同MonthPicker</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>RangePicker属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultValue/</td>
+<td>默认日期，moment[]</td>
+</tr>
+<tr>
+<td>disabledTime</td>
+<td>不可选择时间，fn(dates:moment, moments, partical: ‘start’\</td>
+<td>‘end’)</td>
+</tr>
+<tr>
+<td>format</td>
+<td></td>
+</tr>
+<tr>
+<td>ranges</td>
+<td>可选择区间，{[range:string]:moment[]}\</td>
+<td>() =&gt; {[range:string]:moment[] }</td>
+</tr>
+<tr>
+<td>renderExtraFooter</td>
+<td>添加额外页脚</td>
+</tr>
+<tr>
+<td>showTime</td>
+<td>时间选择，TimePicker Options</td>
+</tr>
+<tr>
+<td></td>
+<td>默认时间，moment[]</td>
+</tr>
+<tr>
+<td>value</td>
+<td>日期[]</td>
+</tr>
+<tr>
+<td>onCalendarChange</td>
+<td>待选日期发生变化的回调，fn(dates: moment, moment, dateStrings:string, string)</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>选中范围变化，同onCalendarChange</td>
+</tr>
+<tr>
+<td>onOk</td>
+<td>确定按钮的回调，function()</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-15-Form-表单"><a href="#4-15-Form-表单" class="headerlink" title="4.15 Form 表单"></a>4.15 Form 表单</h3><p>具有数据收集、校验、提交功能的表单。</p>
+<p>三种排列方式</p>
+<ul>
+<li>水平排列：标签和表单控件水平排列（默认）</li>
+<li>垂直排列：标签和表单空间上下垂直排列</li>
+<li>行内排列：表单项水平行内排列</li>
+</ul>
+<h3 id="4-16-Input输入框"><a href="#4-16-Input输入框" class="headerlink" title="4.16 Input输入框"></a>4.16 Input输入框</h3>
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-05-10T07:09:04.721Z" itemprop="datePublished">2018-05-10</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2018/05/10/DMP项目结构/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    (无标题)
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/05/10/WebStorm 编辑软件/" class="ui tiny button">
+                    
+                    (无标题)
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#Ant-Design"><span>Ant Design</span></a><ol><li><a href="#一、快速上手"><span>一、快速上手</span></a><ol><li><a href="#1-1-安装"><span>1.1 安装</span></a></li><li><a href="#1-2-按需加载"><span>1.2 按需加载</span></a></li></ol></li><li><a href="#二、项目实战"><span>二、项目实战</span></a></li><li><a href="#三、在create-react-app中应用"><span>三、在create-react-app中应用</span></a><ol><li><a href="#3-1-引入antd"><span>3.1 引入antd</span></a></li><li><a href="#3-2-高级配置"><span>3.2 高级配置</span></a></li></ol></li><li><a href="#四、Components"><span>四、Components</span></a><ol><li><a href="#4-1-Button"><span>4.1 Button</span></a></li><li><a href="#4-2-Icon"><span>4.2 Icon</span></a></li><li><a href="#4-3-Grid-栅格"><span>4.3 Grid 栅格</span></a></li><li><a href="#4-4-布局"><span>4.4 布局</span></a></li><li><a href="#4-5-Affix固钉"><span>4.5 Affix固钉</span></a></li><li><a href="#4-6-Breadcrumb-面包屑"><span>4.6 Breadcrumb 面包屑</span></a></li><li><a href="#4-7-Dropdown下拉菜单"><span>4.7 Dropdown下拉菜单</span></a></li><li><a href="#4-8-Menu导航菜单"><span>4.8 Menu导航菜单</span></a></li><li><a href="#4-9-Pagination-分页"><span>4.9 Pagination 分页</span></a></li><li><a href="#4-10-Steps-步骤条"><span>4.10 Steps 步骤条</span></a></li><li><a href="#4-11-AutoComplete自动完成"><span>4.11 AutoComplete自动完成</span></a></li><li><a href="#4-12-Cascader-级联选择器"><span>4.12 Cascader 级联选择器</span></a></li><li><a href="#4-13-Checkbox-多选框"><span>4.13 Checkbox 多选框</span></a></li><li><a href="#4-14-DatePicker日期选择"><span>4.14 DatePicker日期选择</span></a></li><li><a href="#4-15-Form-表单"><span>4.15 Form 表单</span></a></li><li><a href="#4-16-Input输入框"><span>4.16 Input输入框</span></a></li></ol></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

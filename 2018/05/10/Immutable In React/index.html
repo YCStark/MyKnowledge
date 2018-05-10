@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Immutable In React 熟悉 React 的都知道，React 做性能优化时有一个避免重复渲染的大招，就是使用 shouldComponentUpdate()，但它默认返回 true，即始终会执行 render() 方法，然后做 Virtual DOM 比较，并得出是否需要做真实 DOM 更新，这里往往会带来很多无必要的渲染并成为性能瓶颈。 当然我们也可以在 shouldCompon">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/Immutable In React/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Immutable In React 熟悉 React 的都知道，React 做性能优化时有一个避免重复渲染的大招，就是使用 shouldComponentUpdate()，但它默认返回 true，即始终会执行 render() 方法，然后做 Virtual DOM 比较，并得出是否需要做真实 DOM 更新，这里往往会带来很多无必要的渲染并成为性能瓶颈。 当然我们也可以在 shouldCompon">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://camo.githubusercontent.com/9e129aaf95d2a645a860dc26532796817e8085c0/687474703a2f2f696d672e616c6963646e2e636f6d2f7470732f69322f5442317a7a695f4b5858585858637458465858627262384f5658582d3631332d3537352e676966">
+<meta property="og:updated_time" content="2018-05-03T09:03:18.765Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Immutable In React 熟悉 React 的都知道，React 做性能优化时有一个避免重复渲染的大招，就是使用 shouldComponentUpdate()，但它默认返回 true，即始终会执行 render() 方法，然后做 Virtual DOM 比较，并得出是否需要做真实 DOM 更新，这里往往会带来很多无必要的渲染并成为性能瓶颈。 当然我们也可以在 shouldCompon">
+<meta name="twitter:image" content="https://camo.githubusercontent.com/9e129aaf95d2a645a860dc26532796817e8085c0/687474703a2f2f696d672e616c6963646e2e636f6d2f7470732f69322f5442317a7a695f4b5858585858637458465858627262384f5658582d3631332d3537352e676966">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        首页
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-Immutable In React" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>Immutable In React</p>
+<p>熟悉 React 的都知道，React 做性能优化时有一个避免重复渲染的大招，就是使用 <code>shouldComponentUpdate()</code>，但它默认返回 <code>true</code>，即始终会执行 <code>render()</code> 方法，然后做 Virtual DOM 比较，并得出是否需要做真实 DOM 更新，这里往往会带来很多无必要的渲染并成为性能瓶颈。</p>
+<p>当然我们也可以在 <code>shouldComponentUpdate()</code> 中使用使用 deepCopy 和 deepCompare 来避免无必要的 <code>render()</code>，但 <strong>deepCopy 和 deepCompare 一般都是非常耗性能的</strong>。</p>
+<p><strong>Immutable 则提供了简洁高效的判断数据是否变化的方法</strong>，只需 <code>===</code> 和 <code>is</code> 比较就能知道是否需要执行 <code>render()</code>，而这个<strong>操作几乎 0 成本</strong>，所以可以极大提高性能。修改后的 <code>shouldComponentUpdate</code> 是这样的：</p>
+<blockquote>
+<p>注意：React 中规定 <code>state</code> 和 <code>props</code> 只能是一个普通对象，所以比较时要比较对象的 <code>key</code>，谢谢 <a href="https://github.com/chenmnkken" target="_blank" rel="noopener">@chenmnkken</a> 指正。</p>
+</blockquote>
+<h2 id="什么是Immutabble-Data"><a href="#什么是Immutabble-Data" class="headerlink" title="什么是Immutabble Data"></a>什么是Immutabble Data</h2><p>​    Immutable Data是一旦创建就不能被修改的数据，对Immutable对象的任何修改或添加删除都会返回一个新的Immutable对象。Immutable实现的原理是<code>Persistent Data Structure</code>(持久化数据结构)，也就是使用旧数据创建新数据时，要保证旧数据同时可用且不变。同事为避免deepCopy把所有节点都复制一遍带来的性能损耗，Immutable使用了<code>Structural Sharing</code>(结构共享)，即如果对象树中一个节点发生变化，只修改这个节点和受他影响的父节点，其他节点则进行共享。</p>
+<p><img src="https://camo.githubusercontent.com/9e129aaf95d2a645a860dc26532796817e8085c0/687474703a2f2f696d672e616c6963646e2e636f6d2f7470732f69322f5442317a7a695f4b5858585858637458465858627262384f5658582d3631332d3537352e676966" alt="Immutable åçå¨ç»"> </p>
+<p>目前流行的Immutable库有两个：</p>
+<p>####Immutable.js</p>
+<p>​    Facebook的Lee Byron花费3年，与React同期出现，但没有被默认放到React工具集里（React提供了简化的Helper）。它内部实现了一套完整的Persistent Data Structure，和很多的易用数据类型：Collection、List、Map、Set等，方法：map、filter、reduce、find等，同时API也尽量与Object、Array类似。</p>
+<h4 id="seamless-immutable"><a href="#seamless-immutable" class="headerlink" title="seamless-immutable"></a>seamless-immutable</h4><p>没有实现完整的Persistent Data Structure，而是使用Object.defineProperty（IE9以上）扩展了JS的Array和Object对象来实现，只支持Array、Object两种数据类型，代码库小，压缩后仅2k，Immutable压缩后16k。</p>
+<h2 id="Immutable优点"><a href="#Immutable优点" class="headerlink" title="Immutable优点"></a>Immutable优点</h2><h3 id="1-Immutable降低了Mutable带来的复杂度"><a href="#1-Immutable降低了Mutable带来的复杂度" class="headerlink" title="1.Immutable降低了Mutable带来的复杂度"></a>1.Immutable降低了Mutable带来的复杂度</h3><p>可变（Mutable）数据耦合了Time和Value的概念，造成了数据很难回溯。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">touchAndLog</span>(<span class="params">touchFn</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> data = &#123;<span class="attr">key</span>: <span class="string">'value'</span>&#125;</span><br><span class="line">    touchFn(data);</span><br><span class="line">    <span class="built_in">console</span>.log(data.key);<span class="comment">//猜猜打印什么</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在不查看touchFn的代码下，你是不可能知道会打印什么，    但如果data是Immutable，可以很肯定的知道打印的是value</p>
+<h3 id="2-节省内存"><a href="#2-节省内存" class="headerlink" title="2.节省内存"></a>2.节省内存</h3><p>Immutable使用Structure Sharing会尽量复用内存。没有被引用的对象会被垃圾回收。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="built_in">Map</span>(&#123;</span><br><span class="line">    select: <span class="string">'user'</span>,</span><br><span class="line">    filter: <span class="built_in">Map</span>(&#123;<span class="attr">name</span>: <span class="string">'Cam'</span>&#125;)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">let</span> b = a.set(&#123;<span class="string">'select'</span>, <span class="string">'people'</span>&#125;)</span><br><span class="line">a === b; <span class="comment">//false</span></span><br><span class="line">a.get(<span class="string">'filter'</span>) === b.get(<span class="string">'filter'</span>); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<p>a，b共享了filter节点。</p>
+<h3 id="3-Undo-Redo-Copy-Paste，甚至时间旅行这些功能都小菜一碟"><a href="#3-Undo-Redo-Copy-Paste，甚至时间旅行这些功能都小菜一碟" class="headerlink" title="3.Undo/Redo,Copy/Paste，甚至时间旅行这些功能都小菜一碟"></a>3.Undo/Redo,Copy/Paste，甚至时间旅行这些功能都小菜一碟</h3><p>每次数据结构不一样，只要把数据放到数组存储起来，可以任意回退。</p>
+<h3 id="4-并发安全"><a href="#4-并发安全" class="headerlink" title="4.并发安全"></a>4.并发安全</h3><p>传统并发难做，使用Immutable后，数据部可变， <strong>并发锁就不需要了</strong>。</p>
+<blockquote>
+<p>JS目前还是单线程</p>
+</blockquote>
+<h3 id="5-拥抱函数式编程"><a href="#5-拥抱函数式编程" class="headerlink" title="5. 拥抱函数式编程"></a>5. 拥抱函数式编程</h3><p>Immutable本身是函数式编程中的概念，纯函数式编程比面向对象更适用于前端开发。这样开发的组件易于调试和组装。</p>
+<h2 id="Immutable缺点"><a href="#Immutable缺点" class="headerlink" title="Immutable缺点"></a>Immutable缺点</h2><h3 id="1-需要学习新的API"><a href="#1-需要学习新的API" class="headerlink" title="1.需要学习新的API"></a>1.需要学习新的API</h3><h3 id="2-增加了资源文件的大小"><a href="#2-增加了资源文件的大小" class="headerlink" title="2.增加了资源文件的大小"></a>2.增加了资源文件的大小</h3><h3 id="3-容易与原生对象混淆"><a href="#3-容易与原生对象混淆" class="headerlink" title="3.容易与原生对象混淆"></a>3.容易与原生对象混淆</h3><p>Immutable的Map和LIst虽对应原生Object和Array，但操作不同。Immutable每次修改都会返回新对象，也很容易忘记赋值。</p>
+<p>解决方案：</p>
+<ol>
+<li>使用Flow或TypeScript有静态类型检查的工具</li>
+<li>约定变量名规则：Immutable对象用$$开头</li>
+<li>使用Immutable.fromJS，而不是Immutable.Map,可避免与原生对象混用。</li>
+</ol>
+<h2 id="更多认识"><a href="#更多认识" class="headerlink" title="更多认识"></a>更多认识</h2><h3 id="Immutable-js"><a href="#Immutable-js" class="headerlink" title="Immutable.js"></a>Immutable.js</h3><p><code>===</code> 比较的是内存地址，性能最好。</p>
+<p>Immutable的<code>is</code>是比较两个对象的hashCode和valueOf(对于JS、对象)。由于immutable使用Trie数据结构存储，只要两个hashCode相等，值就是一样的。避免了深度遍历。</p>
+<h3 id="与Object-freeze、const区别"><a href="#与Object-freeze、const区别" class="headerlink" title="与Object.freeze、const区别"></a>与Object.freeze、const区别</h3><p>两者都是shallowCopy的，对象层级一深就需要特殊处理。</p>
+<h3 id="Cursor概念"><a href="#Cursor概念" class="headerlink" title="Cursor概念"></a>Cursor概念</h3><p>由于Immutable数据一般嵌套深，为便利访问深层数据，Cursor提供了该引用。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Immutable <span class="keyword">from</span> <span class="string">'immutable'</span>;</span><br><span class="line"><span class="keyword">import</span> Cursor <span class="keyword">from</span> <span class="string">'immutable/contrib/cursor'</span>;</span><br><span class="line"><span class="keyword">let</span> data = Immutable.fromJS(&#123;<span class="attr">a</span>: &#123;<span class="attr">b</span>: &#123;<span class="attr">c</span>: <span class="number">1</span>&#125;&#125;);</span><br><span class="line"><span class="comment">//让cursor指向&#123;c:1&#125;</span></span><br><span class="line"><span class="keyword">let</span> cursor = Cursor.from(data, [<span class="string">'a'</span>,<span class="string">'b'</span>], newData =&gt; &#123;</span><br><span class="line">	<span class="comment">//当cursor或子cursor执行update时调用</span></span><br><span class="line">    <span class="built_in">console</span>.log(newData);</span><br><span class="line">&#125;)</span><br><span class="line">cursor.get(<span class="string">'c'</span>);<span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<p>###实践</p>
+<h4 id="与React搭配，Pure-Render"><a href="#与React搭配，Pure-Render" class="headerlink" title="与React搭配，Pure Render"></a>与React搭配，Pure Render</h4><p>​    React做性能优化时有个避免重复渲染的大招，就是使用<code>收了ComponentUpdate()</code>，默认返回true，执行render() 方法，然后做Virtual DOM比较，并得出是否需要做真实DOM更新，这里往往会带来很多无必要的渲染并成为性能瓶颈。</p>
+<p>​    也可以使用deepCopy、deepCompare来避免无必要的render，但一般非常耗性能的。</p>
+<p>​    Immutable提供了简洁高效的判断数据是否变化的方法，=== 、is ，操作几乎0成本。</p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-05-10T07:09:04.740Z" itemprop="datePublished">2018-05-10</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2018/05/10/React 学习/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    (无标题)
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/05/10/DSP项目结构/" class="ui tiny button">
+                    
+                    (无标题)
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#什么是Immutabble-Data"><span>什么是Immutabble Data</span></a><ol><li><a href="#seamless-immutable"><span>seamless-immutable</span></a></li></ol></li></ol></li><li><a href="#Immutable优点"><span>Immutable优点</span></a><ol><li><a href="#1-Immutable降低了Mutable带来的复杂度"><span>1.Immutable降低了Mutable带来的复杂度</span></a></li><li><a href="#2-节省内存"><span>2.节省内存</span></a></li><li><a href="#3-Undo-Redo-Copy-Paste，甚至时间旅行这些功能都小菜一碟"><span>3.Undo/Redo,Copy/Paste，甚至时间旅行这些功能都小菜一碟</span></a></li><li><a href="#4-并发安全"><span>4.并发安全</span></a></li><li><a href="#5-拥抱函数式编程"><span>5. 拥抱函数式编程</span></a></li></ol></li><li><a href="#Immutable缺点"><span>Immutable缺点</span></a><ol><li><a href="#1-需要学习新的API"><span>1.需要学习新的API</span></a></li><li><a href="#2-增加了资源文件的大小"><span>2.增加了资源文件的大小</span></a></li><li><a href="#3-容易与原生对象混淆"><span>3.容易与原生对象混淆</span></a></li></ol></li><li><a href="#更多认识"><span>更多认识</span></a><ol><li><a href="#Immutable-js"><span>Immutable.js</span></a></li><li><a href="#与Object-freeze、const区别"><span>与Object.freeze、const区别</span></a></li><li><a href="#Cursor概念"><span>Cursor概念</span></a><ol><li><a href="#与React搭配，Pure-Render"><span>与React搭配，Pure Render</span></a></li></ol></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
