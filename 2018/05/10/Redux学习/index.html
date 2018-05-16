@@ -9,17 +9,17 @@
     <title>Hexo</title>
 
     <!-- Open Graph -->
-    <meta name="description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+    <meta name="description" content="#&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x7840; &amp;#x4E09;&amp;#x5927;&amp;#x539F;&amp;#x5219;&amp;#xFF1A;&amp;#x5355;&amp;#x4E00;&amp;#x6570;&amp;#x636E;&amp;#x6E90;&amp;#xFF08;store&amp;#xFF09;&amp;#x3001;State&amp;#x53EA;&amp;#x8BFB;&amp;#x3001;&amp;#x7EAF;&amp;#x51FD;&amp;#x6570;&amp;#x6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/05/10/Redux学习/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+<meta property="og:description" content="#&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x7840; &amp;#x4E09;&amp;#x5927;&amp;#x539F;&amp;#x5219;&amp;#xFF1A;&amp;#x5355;&amp;#x4E00;&amp;#x6570;&amp;#x636E;&amp;#x6E90;&amp;#xFF08;store&amp;#xFF09;&amp;#x3001;State&amp;#x53EA;&amp;#x8BFB;&amp;#x3001;&amp;#x7EAF;&amp;#x51FD;&amp;#x6570;&amp;#x6">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-04-12T11:44:21.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="#一、基础 三大原则：单一数据源（store）、State只读、纯函数执行修改 ##一、使用Redux的场景： ​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。 从组件角度看： ​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另">
+<meta name="twitter:description" content="#&amp;#x4E00;&amp;#x3001;&amp;#x57FA;&amp;#x7840; &amp;#x4E09;&amp;#x5927;&amp;#x539F;&amp;#x5219;&amp;#xFF1A;&amp;#x5355;&amp;#x4E00;&amp;#x6570;&amp;#x636E;&amp;#x6E90;&amp;#xFF08;store&amp;#xFF09;&amp;#x3001;State&amp;#x53EA;&amp;#x8BFB;&amp;#x3001;&amp;#x7EAF;&amp;#x51FD;&amp;#x6570;&amp;#x6">
 
     <script type="application/ld+json">
 {
@@ -106,7 +106,7 @@
     
     <a href="/index.html" class="item" >
         <i class="home icon"></i>
-        HOME
+        首页
     </a>
 
     
@@ -134,295 +134,295 @@
 
                     <div class="article-entry" itemprop="articleBody">
                         
-                        <p>#一、基础</p>
-<p><strong>三大原则：</strong>单一数据源（store）、State只读、纯函数执行修改</p>
-<p>##一、使用Redux的场景：</p>
-<p>​       用户使用方式复杂；不同身份用户有不同的使用方式（用户、管理员）；多个用户协作；与服务器大量交互，或使用了WebSocket；View要从多个来源获取数据。</p>
-<p>从组件角度看：</p>
-<p>​       某个组件状态需要共享；状态需要任何地方可以拿到；组件需要改变全局状态；组件需要改变另一个组件的状态。</p>
-<p>##二、设计思想：</p>
-<p>​       Web应用是一个状态机，视图与状态一一对应</p>
-<p>​       所有状态，保存在一个对象里面</p>
-<p>##三、基本概念</p>
+                        <p>#&#x4E00;&#x3001;&#x57FA;&#x7840;</p>
+<p><strong>&#x4E09;&#x5927;&#x539F;&#x5219;&#xFF1A;</strong>&#x5355;&#x4E00;&#x6570;&#x636E;&#x6E90;&#xFF08;store&#xFF09;&#x3001;State&#x53EA;&#x8BFB;&#x3001;&#x7EAF;&#x51FD;&#x6570;&#x6267;&#x884C;&#x4FEE;&#x6539;</p>
+<p>##&#x4E00;&#x3001;&#x4F7F;&#x7528;Redux&#x7684;&#x573A;&#x666F;&#xFF1A;</p>
+<p>&#x200B;       &#x7528;&#x6237;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x590D;&#x6742;&#xFF1B;&#x4E0D;&#x540C;&#x8EAB;&#x4EFD;&#x7528;&#x6237;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF08;&#x7528;&#x6237;&#x3001;&#x7BA1;&#x7406;&#x5458;&#xFF09;&#xFF1B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x534F;&#x4F5C;&#xFF1B;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x5927;&#x91CF;&#x4EA4;&#x4E92;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x4E86;WebSocket&#xFF1B;View&#x8981;&#x4ECE;&#x591A;&#x4E2A;&#x6765;&#x6E90;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x4ECE;&#x7EC4;&#x4EF6;&#x89D2;&#x5EA6;&#x770B;&#xFF1A;</p>
+<p>&#x200B;       &#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;&#x9700;&#x8981;&#x5171;&#x4EAB;&#xFF1B;&#x72B6;&#x6001;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#xFF1B;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x6539;&#x53D8;&#x5168;&#x5C40;&#x72B6;&#x6001;&#xFF1B;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x6539;&#x53D8;&#x53E6;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p>##&#x4E8C;&#x3001;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF1A;</p>
+<p>&#x200B;       Web&#x5E94;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x673A;&#xFF0C;&#x89C6;&#x56FE;&#x4E0E;&#x72B6;&#x6001;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;</p>
+<p>&#x200B;       &#x6240;&#x6709;&#x72B6;&#x6001;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x91CC;&#x9762;</p>
+<p>##&#x4E09;&#x3001;&#x57FA;&#x672C;&#x6982;&#x5FF5;</p>
 <p>###3.1 Store</p>
-<p>​       <strong>保存数据</strong>的地方，看成一个容器，只有一个。</p>
-<p>​       Import { createStore } from ‘redux’;</p>
-<p>​       Const store = createStore( fn );     //用于生成Store</p>
-<p>接受一个函数做参数，返回新生成的Store对象。</p>
-<p>四个方法：getState、dispatch、subscribe、replaceReducer</p>
+<p>&#x200B;       <strong>&#x4FDD;&#x5B58;&#x6570;&#x636E;</strong>&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>&#x200B;       Import { createStore } from &#x2018;redux&#x2019;;</p>
+<p>&#x200B;       Const store = createStore( fn );     //&#x7528;&#x4E8E;&#x751F;&#x6210;Store</p>
+<p>&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x505A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x751F;&#x6210;&#x7684;Store&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;getState&#x3001;dispatch&#x3001;subscribe&#x3001;replaceReducer</p>
 <p>###3.2 State</p>
-<p>​       对象包含所有数据。如果想得到某时间点数据，<strong>对**</strong>Store<strong>**生成快照</strong>。这种时点的数据集合，叫State。</p>
-<p>​       Const state = store.getState();       //拿到当前时刻的State</p>
+<p>&#x200B;       &#x5BF9;&#x8C61;&#x5305;&#x542B;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x60F3;&#x5F97;&#x5230;&#x67D0;&#x65F6;&#x95F4;&#x70B9;&#x6570;&#x636E;&#xFF0C;<strong>&#x5BF9;**</strong>Store<strong>**&#x751F;&#x6210;&#x5FEB;&#x7167;</strong>&#x3002;&#x8FD9;&#x79CD;&#x65F6;&#x70B9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5408;&#xFF0C;&#x53EB;State&#x3002;</p>
+<p>&#x200B;       Const state = store.getState();       //&#x62FF;&#x5230;&#x5F53;&#x524D;&#x65F6;&#x523B;&#x7684;State</p>
 <p>###3.3 Action</p>
-<p>State变化，导致View变化。但用户只能接触到View变化，所以State变化必须是View变化导致的。Action是View发出的通知，表示State就要变化了。</p>
-<p>​       Action对象，type属性是必须的，表示Action的名称。<strong>Action**</strong>描述当前发生的事情，改变<strong><strong>State</strong></strong>的唯一方法就是使用<strong><strong>Action</strong></strong>，它会运送数据到<strong>**Store</strong></p>
-<p>​       Const action = { type: ‘ADD_TODO’,payload: ‘Learn Redux’ };</p>
+<p>State&#x53D8;&#x5316;&#xFF0C;&#x5BFC;&#x81F4;View&#x53D8;&#x5316;&#x3002;&#x4F46;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x63A5;&#x89E6;&#x5230;View&#x53D8;&#x5316;&#xFF0C;&#x6240;&#x4EE5;State&#x53D8;&#x5316;&#x5FC5;&#x987B;&#x662F;View&#x53D8;&#x5316;&#x5BFC;&#x81F4;&#x7684;&#x3002;Action&#x662F;View&#x53D1;&#x51FA;&#x7684;&#x901A;&#x77E5;&#xFF0C;&#x8868;&#x793A;State&#x5C31;&#x8981;&#x53D8;&#x5316;&#x4E86;&#x3002;</p>
+<p>&#x200B;       Action&#x5BF9;&#x8C61;&#xFF0C;type&#x5C5E;&#x6027;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x8868;&#x793A;Action&#x7684;&#x540D;&#x79F0;&#x3002;<strong>Action**</strong>&#x63CF;&#x8FF0;&#x5F53;&#x524D;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6539;&#x53D8;<strong><strong>State</strong></strong>&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;<strong><strong>Action</strong></strong>&#xFF0C;&#x5B83;&#x4F1A;&#x8FD0;&#x9001;&#x6570;&#x636E;&#x5230;<strong>**Store</strong></p>
+<p>&#x200B;       Const action = { type: &#x2018;ADD_TODO&#x2019;,payload: &#x2018;Learn Redux&#x2019; };</p>
 <p>###3.4 Action Creator</p>
-<p>​       定义一个函数生成Action，该函数叫Action Creator</p>
-<p>​       Function addTodo(text) { </p>
-<p>​              Return { type: ‘添加TODO’, text }</p>
+<p>&#x200B;       &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x751F;&#x6210;Action&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x53EB;Action Creator</p>
+<p>&#x200B;       Function addTodo(text) { </p>
+<p>&#x200B;              Return { type: &#x2018;&#x6DFB;&#x52A0;TODO&#x2019;, text }</p>
 <p>}</p>
-<p>Const action = addTodo(‘Learn Redux’);</p>
+<p>Const action = addTodo(&#x2018;Learn Redux&#x2019;);</p>
 <p>###3.5store.dispatch()</p>
-<p>​       View发出Action的唯一方法。Dispatch接收Action对象做参数，发送出去。</p>
-<p>​       store.dispatch( { type: ‘ADD_TODO’,payload: ‘Learn Redux’ } );</p>
-<p>###3.6 Reducer（保持纯净）</p>
-<p>​       Store收到Action后，必须给一个新的State，这样View才会变化。<strong>State**</strong>的计算过程称为<strong><strong>Reducer</strong></strong>。**接收Action和当前State作为参数，返回新的State。（遇到未知的Action，返回原State）</p>
-<p>​       Const reducer = function(state, action) {</p>
-<p>​       Returnnew_state;</p>
+<p>&#x200B;       View&#x53D1;&#x51FA;Action&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;&#x3002;Dispatch&#x63A5;&#x6536;Action&#x5BF9;&#x8C61;&#x505A;&#x53C2;&#x6570;&#xFF0C;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002;</p>
+<p>&#x200B;       store.dispatch( { type: &#x2018;ADD_TODO&#x2019;,payload: &#x2018;Learn Redux&#x2019; } );</p>
+<p>###3.6 Reducer&#xFF08;&#x4FDD;&#x6301;&#x7EAF;&#x51C0;&#xFF09;</p>
+<p>&#x200B;       Store&#x6536;&#x5230;Action&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x7ED9;&#x4E00;&#x4E2A;&#x65B0;&#x7684;State&#xFF0C;&#x8FD9;&#x6837;View&#x624D;&#x4F1A;&#x53D8;&#x5316;&#x3002;<strong>State**</strong>&#x7684;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;<strong><strong>Reducer</strong></strong>&#x3002;**&#x63A5;&#x6536;Action&#x548C;&#x5F53;&#x524D;State&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x7684;State&#x3002;&#xFF08;&#x9047;&#x5230;&#x672A;&#x77E5;&#x7684;Action&#xFF0C;&#x8FD4;&#x56DE;&#x539F;State&#xFF09;</p>
+<p>&#x200B;       Const reducer = function(state, action) {</p>
+<p>&#x200B;       Returnnew_state;</p>
 <p>}</p>
-<p>​       实际应用中，Reducer不用手动调用，dispatch方法会触发Reducer自动执行。因此生成Store时，Reducer传入createStore方法。</p>
-<p>​       Const store = createStore(reducer);</p>
-<p>​       <strong>作为数组的**</strong>reduce<strong>**方法做参数</strong></p>
-<p>###3.7 纯函数</p>
-<p>​       Reducer函数最重要的特征：<strong>纯函数。</strong>因此，最好State设成只读，好处：任何时候，与某个View对应的State总是一个不变的对象。</p>
+<p>&#x200B;       &#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;Reducer&#x4E0D;&#x7528;&#x624B;&#x52A8;&#x8C03;&#x7528;&#xFF0C;dispatch&#x65B9;&#x6CD5;&#x4F1A;&#x89E6;&#x53D1;Reducer&#x81EA;&#x52A8;&#x6267;&#x884C;&#x3002;&#x56E0;&#x6B64;&#x751F;&#x6210;Store&#x65F6;&#xFF0C;Reducer&#x4F20;&#x5165;createStore&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x200B;       Const store = createStore(reducer);</p>
+<p>&#x200B;       <strong>&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x7684;**</strong>reduce<strong>**&#x65B9;&#x6CD5;&#x505A;&#x53C2;&#x6570;</strong></p>
+<p>###3.7 &#x7EAF;&#x51FD;&#x6570;</p>
+<p>&#x200B;       Reducer&#x51FD;&#x6570;&#x6700;&#x91CD;&#x8981;&#x7684;&#x7279;&#x5F81;&#xFF1A;<strong>&#x7EAF;&#x51FD;&#x6570;&#x3002;</strong>&#x56E0;&#x6B64;&#xFF0C;&#x6700;&#x597D;State&#x8BBE;&#x6210;&#x53EA;&#x8BFB;&#xFF0C;&#x597D;&#x5904;&#xFF1A;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#xFF0C;&#x4E0E;&#x67D0;&#x4E2A;View&#x5BF9;&#x5E94;&#x7684;State&#x603B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53D8;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
 <p>###3.8store.subscribe()</p>
-<p>​       设置监听函数，State发生变化，就自动执行。</p>
-<p>​       Store.subscribe( listener );</p>
-<p>​       只要把View的更新函数（即render或setState）放入listener，就能实现自动渲染。该方法返回一个函数，调用该函数解除监听。</p>
-<p>##四、Store实现</p>
-<p>​       Import { createStore } from ‘redux’;</p>
-<p>​       Let { subscribe, dispatch, getState } =createStore( reducer );</p>
-<p>createStore方法的第二个参数，表示State的最初状态，通常是服务器给出的。</p>
-<p>​       Let store = createStore( todoApp,window.STATE_FROM_SERVER )；</p>
-<p>该应用的状态初始值，如果提供了，就会覆盖Reducer默认初始值。</p>
-<p>##五、Reducer拆分</p>
-<p>​       不同函数负责State的不同属性变化，最终合并成一个大的Reducer。</p>
-<p>​       Const chatReducer = ( state =defaultState, action = {}) =&gt; {</p>
-<p>​              Return { </p>
-<p>​       charLog:chatLog( state.chatLog, action),</p>
-<p>​       statusMesage:statusMessage( state.statusMessage, action)</p>
+<p>&#x200B;       &#x8BBE;&#x7F6E;&#x76D1;&#x542C;&#x51FD;&#x6570;&#xFF0C;State&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5C31;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x200B;       Store.subscribe( listener );</p>
+<p>&#x200B;       &#x53EA;&#x8981;&#x628A;View&#x7684;&#x66F4;&#x65B0;&#x51FD;&#x6570;&#xFF08;&#x5373;render&#x6216;setState&#xFF09;&#x653E;&#x5165;listener&#xFF0C;&#x5C31;&#x80FD;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x6E32;&#x67D3;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x89E3;&#x9664;&#x76D1;&#x542C;&#x3002;</p>
+<p>##&#x56DB;&#x3001;Store&#x5B9E;&#x73B0;</p>
+<p>&#x200B;       Import { createStore } from &#x2018;redux&#x2019;;</p>
+<p>&#x200B;       Let { subscribe, dispatch, getState } =createStore( reducer );</p>
+<p>createStore&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;State&#x7684;&#x6700;&#x521D;&#x72B6;&#x6001;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7ED9;&#x51FA;&#x7684;&#x3002;</p>
+<p>&#x200B;       Let store = createStore( todoApp,window.STATE_FROM_SERVER )&#xFF1B;</p>
+<p>&#x8BE5;&#x5E94;&#x7528;&#x7684;&#x72B6;&#x6001;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#xFF0C;&#x5C31;&#x4F1A;&#x8986;&#x76D6;Reducer&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<p>##&#x4E94;&#x3001;Reducer&#x62C6;&#x5206;</p>
+<p>&#x200B;       &#x4E0D;&#x540C;&#x51FD;&#x6570;&#x8D1F;&#x8D23;State&#x7684;&#x4E0D;&#x540C;&#x5C5E;&#x6027;&#x53D8;&#x5316;&#xFF0C;&#x6700;&#x7EC8;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684;Reducer&#x3002;</p>
+<p>&#x200B;       Const chatReducer = ( state =defaultState, action = {}) =&gt; {</p>
+<p>&#x200B;              Return { </p>
+<p>&#x200B;       charLog:chatLog( state.chatLog, action),</p>
+<p>&#x200B;       statusMesage:statusMessage( state.statusMessage, action)</p>
 <p>} }</p>
-<p>​       Redux提供了<strong>combineReducers</strong>方法，用于Reducer拆分。</p>
-<p>​       Import { combineReducers } from ‘redux’;</p>
-<p>​       Const chatReducer = combineReducers({</p>
-<p>​       chatLog,</p>
-<p>​       statusMesage</p>
+<p>&#x200B;       Redux&#x63D0;&#x4F9B;&#x4E86;<strong>combineReducers</strong>&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;Reducer&#x62C6;&#x5206;&#x3002;</p>
+<p>&#x200B;       Import { combineReducers } from &#x2018;redux&#x2019;;</p>
+<p>&#x200B;       Const chatReducer = combineReducers({</p>
+<p>&#x200B;       chatLog,</p>
+<p>&#x200B;       statusMesage</p>
 <p>}) </p>
-<p>该写法的前提是State的属性名与子Reducer同名</p>
+<p>&#x8BE5;&#x5199;&#x6CD5;&#x7684;&#x524D;&#x63D0;&#x662F;State&#x7684;&#x5C5E;&#x6027;&#x540D;&#x4E0E;&#x5B50;Reducer&#x540C;&#x540D;</p>
 <p>#####combineReducers</p>
-<p>​    combineReducers辅助函数的作用是把一个由不同reducer函数作为value的object，合并成一个最终的reducer函数，然后就可以对这个reducer调用createStore。</p>
-<p>​    合并后的reducer可以调用各子reducer，并把它们的结果合并成一个state对象，state对象的结构由传入的多个reducer的key觉定。</p>
+<p>&#x200B;    combineReducers&#x8F85;&#x52A9;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x628A;&#x4E00;&#x4E2A;&#x7531;&#x4E0D;&#x540C;reducer&#x51FD;&#x6570;&#x4F5C;&#x4E3A;value&#x7684;object&#xFF0C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x6700;&#x7EC8;&#x7684;reducer&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x8FD9;&#x4E2A;reducer&#x8C03;&#x7528;createStore&#x3002;</p>
+<p>&#x200B;    &#x5408;&#x5E76;&#x540E;&#x7684;reducer&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5404;&#x5B50;reducer&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x4EEC;&#x7684;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;state&#x5BF9;&#x8C61;&#xFF0C;state&#x5BF9;&#x8C61;&#x7684;&#x7ED3;&#x6784;&#x7531;&#x4F20;&#x5165;&#x7684;&#x591A;&#x4E2A;reducer&#x7684;key&#x89C9;&#x5B9A;&#x3002;</p>
 <blockquote>
-<p>子reducer返回的state对象，只表示当前state key值的一部分</p>
+<p>&#x5B50;reducer&#x8FD4;&#x56DE;&#x7684;state&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x8868;&#x793A;&#x5F53;&#x524D;state key&#x503C;&#x7684;&#x4E00;&#x90E8;&#x5206;</p>
 </blockquote>
-<ol>
-<li>规则</li>
+<ol class="ui list">
+<li>&#x89C4;&#x5219;</li>
 </ol>
-<ul>
-<li>所有未匹配到的action，必须把它接收到的第一个参数也就是那个state原封不动返回？</li>
-<li>永远不能返回undefined。如有抛异常</li>
-<li>如传入state为undefined，一定要返回对应reducer 初始的state，初始state禁止使用undefined</li>
+<ul class="ui list">
+<li>&#x6240;&#x6709;&#x672A;&#x5339;&#x914D;&#x5230;&#x7684;action&#xFF0C;&#x5FC5;&#x987B;&#x628A;&#x5B83;&#x63A5;&#x6536;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E5F;&#x5C31;&#x662F;&#x90A3;&#x4E2A;state&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#x8FD4;&#x56DE;&#xFF1F;</li>
+<li>&#x6C38;&#x8FDC;&#x4E0D;&#x80FD;&#x8FD4;&#x56DE;undefined&#x3002;&#x5982;&#x6709;&#x629B;&#x5F02;&#x5E38;</li>
+<li>&#x5982;&#x4F20;&#x5165;state&#x4E3A;undefined&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;reducer &#x521D;&#x59CB;&#x7684;state&#xFF0C;&#x521D;&#x59CB;state&#x7981;&#x6B62;&#x4F7F;&#x7528;undefined</li>
 </ul>
-<ol start="2">
-<li>实现</li>
+<ol start="2" class="ui list">
+<li>&#x5B9E;&#x73B0;</li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> combineReeducers1 = <span class="function">(<span class="params">obj</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">//内部具体代码</span></span><br><span class="line">    <span class="keyword">var</span> finalState = &#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state, action</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> obj) &#123;</span><br><span class="line">        	<span class="comment">//根据key属性值调用function（state.属性名，action）</span></span><br><span class="line">        	finalState[p] = obj[p](state[p], action);</span><br><span class="line">        </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> finalState;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> reducer</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rootReducer = conbineReducers1(&#123;<span class="attr">key</span>: value&#125;);</span><br></pre></td></tr></table></figure>
-<p>##六、工作流程</p>
-<p>​                              </p>
-<p>##七、中间件middleware</p>
-<p>dispatch方法中，在发出Action和执行Reducer之间，添加其他功能。</p>
-<p>​       applyMiddleware（）作为createStore的第三个参数。</p>
-<p>将所有中间件生成数组，依次执行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> combineReeducers1 = <span class="function">(<span class="params">obj</span>) =&gt;</span> {</span><br><span class="line">	<span class="comment">//&#x5185;&#x90E8;&#x5177;&#x4F53;&#x4EE3;&#x7801;</span></span><br><span class="line">    <span class="keyword">var</span> finalState = {}</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state, action</span>) </span>{</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> obj) {</span><br><span class="line">        	<span class="comment">//&#x6839;&#x636E;key&#x5C5E;&#x6027;&#x503C;&#x8C03;&#x7528;function&#xFF08;state.&#x5C5E;&#x6027;&#x540D;&#xFF0C;action&#xFF09;</span></span><br><span class="line">        	finalState[p] = obj[p](state[p], action);</span><br><span class="line">        </span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> finalState;</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> reducer</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rootReducer = conbineReducers1({<span class="attr">key</span>: value});</span><br></pre></td></tr></table></figure>
+<p>##&#x516D;&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</p>
+<p>&#x200B;                              </p>
+<p>##&#x4E03;&#x3001;&#x4E2D;&#x95F4;&#x4EF6;middleware</p>
+<p>dispatch&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5728;&#x53D1;&#x51FA;Action&#x548C;&#x6267;&#x884C;Reducer&#x4E4B;&#x95F4;&#xFF0C;&#x6DFB;&#x52A0;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x200B;       applyMiddleware&#xFF08;&#xFF09;&#x4F5C;&#x4E3A;createStore&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5C06;&#x6240;&#x6709;&#x4E2D;&#x95F4;&#x4EF6;&#x751F;&#x6210;&#x6570;&#x7EC4;&#xFF0C;&#x4F9D;&#x6B21;&#x6267;&#x884C;</p>
 <p>Action -&gt;middleware1 -&gt; middleware2 -&gt; reducer</p>
-<p>##八、异步操作</p>
-<p>​       同步操作发出一种Action即可，异步操作需要发三种Action。</p>
-<p>操作发起、成功、失败。</p>
-<p>两种写法：</p>
-<ol>
-<li><p>{type: ‘FETCH_POSTS’, status: ‘error/success’, error: ‘Oops’/response: {…} }</p>
+<p>##&#x516B;&#x3001;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;</p>
+<p>&#x200B;       &#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x53D1;&#x51FA;&#x4E00;&#x79CD;Action&#x5373;&#x53EF;&#xFF0C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x53D1;&#x4E09;&#x79CD;Action&#x3002;</p>
+<p>&#x64CD;&#x4F5C;&#x53D1;&#x8D77;&#x3001;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x3002;</p>
+<p>&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;</p>
+<ol class="ui list">
+<li><p>{type: &#x2018;FETCH_POSTS&#x2019;, status: &#x2018;error/success&#x2019;, error: &#x2018;Oops&#x2019;/response: {&#x2026;} }</p>
 </li>
-<li><p>{type: ‘REQUEST/FAILURE/SUCCESS’, error: ‘Oops’/response: {…}}</p>
+<li><p>{type: &#x2018;REQUEST/FAILURE/SUCCESS&#x2019;, error: &#x2018;Oops&#x2019;/response: {&#x2026;}}</p>
 </li>
 </ol>
-<p>除了Action种类不同，异步操作State也要改造</p>
-<p>State = {isFetching: true, didInvalidate: true, lateUpdate: ‘xxx’, … }</p>
-<p>isFetching表示是否在抓取数据，didInvalidate是否过时，lateUpdate最后更新时间。</p>
-<p>##九、 Redux-thunk</p>
-<p>（操作开始、结束都发Action）</p>
-<p>​       componentDidMount（）{</p>
-<p>​              const { dispatch, selectedPost } =this.props</p>
-<p>​              dispatch(fetchPosts ( selectedPost) ) </p>
-<p>}      加载成功后（componentDidMount），送出了（dispatch方法）一个Action，向服务器请求数据（fetchPosts），fetchPosts就是Action Creator</p>
-<p>​       Const <a href="">fetchPosts </a>=postTitle =&gt; ( dispatch,  getstate)=&gt; {</p>
-<p>​       Dispatch(requestPosts( postTitle));</p>
-<p>​       Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
-<p>​              .then(response =&gt; response.json() )</p>
-<p>​              .then(json =&gt; dispatch( receivePosts( postTitle, json )))</p>
+<p>&#x9664;&#x4E86;Action&#x79CD;&#x7C7B;&#x4E0D;&#x540C;&#xFF0C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;State&#x4E5F;&#x8981;&#x6539;&#x9020;</p>
+<p>State = {isFetching: true, didInvalidate: true, lateUpdate: &#x2018;xxx&#x2019;, &#x2026; }</p>
+<p>isFetching&#x8868;&#x793A;&#x662F;&#x5426;&#x5728;&#x6293;&#x53D6;&#x6570;&#x636E;&#xFF0C;didInvalidate&#x662F;&#x5426;&#x8FC7;&#x65F6;&#xFF0C;lateUpdate&#x6700;&#x540E;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x3002;</p>
+<p>##&#x4E5D;&#x3001; Redux-thunk</p>
+<p>&#xFF08;&#x64CD;&#x4F5C;&#x5F00;&#x59CB;&#x3001;&#x7ED3;&#x675F;&#x90FD;&#x53D1;Action&#xFF09;</p>
+<p>&#x200B;       componentDidMount&#xFF08;&#xFF09;{</p>
+<p>&#x200B;              const { dispatch, selectedPost } =this.props</p>
+<p>&#x200B;              dispatch(fetchPosts ( selectedPost) ) </p>
+<p>}      &#x52A0;&#x8F7D;&#x6210;&#x529F;&#x540E;&#xFF08;componentDidMount&#xFF09;&#xFF0C;&#x9001;&#x51FA;&#x4E86;&#xFF08;dispatch&#x65B9;&#x6CD5;&#xFF09;&#x4E00;&#x4E2A;Action&#xFF0C;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#xFF08;fetchPosts&#xFF09;&#xFF0C;fetchPosts&#x5C31;&#x662F;Action Creator</p>
+<p>&#x200B;       Const <a href="">fetchPosts </a>=postTitle =&gt; ( dispatch,  getstate)=&gt; {</p>
+<p>&#x200B;       Dispatch(requestPosts( postTitle));</p>
+<p>&#x200B;       Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
+<p>&#x200B;              .then(response =&gt; response.json() )</p>
+<p>&#x200B;              .then(json =&gt; dispatch( receivePosts( postTitle, json )))</p>
 <p>}</p>
-<p>//使用方法一</p>
-<p>Store.dispatch(fetchPosts( ‘reactjs’ ))</p>
-<p>//使用方法二</p>
-<p>Store.dispatch(fetchPosts( ‘reactjs’ )).then(() =&gt; console.log(store.getState()) )</p>
-<p>​       fetchPosts是一个Action Creator动作生成器·，返回一个函数。</p>
-<p>注意：</p>
-<ol>
-<li><p>FetchPosts返回函数，普通Action Creator返回对象</p>
+<p>//&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E00;</p>
+<p>Store.dispatch(fetchPosts( &#x2018;reactjs&#x2019; ))</p>
+<p>//&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E8C;</p>
+<p>Store.dispatch(fetchPosts( &#x2018;reactjs&#x2019; )).then(() =&gt; console.log(store.getState()) )</p>
+<p>&#x200B;       fetchPosts&#x662F;&#x4E00;&#x4E2A;Action Creator&#x52A8;&#x4F5C;&#x751F;&#x6210;&#x5668;&#xB7;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol class="ui list">
+<li><p>FetchPosts&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#xFF0C;&#x666E;&#x901A;Action Creator&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;</p>
 </li>
-<li><p>返回函数参数是dispatch、getState两个Redux方法，普通的返回Acton内容</p>
+<li><p>&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;dispatch&#x3001;getState&#x4E24;&#x4E2A;Redux&#x65B9;&#x6CD5;&#xFF0C;&#x666E;&#x901A;&#x7684;&#x8FD4;&#x56DE;Acton&#x5185;&#x5BB9;</p>
 </li>
-<li><p>返回函数中，先发Action（requestPosts（postTitle））表开始</p>
+<li><p>&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5148;&#x53D1;Action&#xFF08;requestPosts&#xFF08;postTitle&#xFF09;&#xFF09;&#x8868;&#x5F00;&#x59CB;</p>
 </li>
-<li><p>异步结束后，发一个Action（receivePosts），表结束</p>
+<li><p>&#x5F02;&#x6B65;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x53D1;&#x4E00;&#x4E2A;Action&#xFF08;receivePosts&#xFF09;&#xFF0C;&#x8868;&#x7ED3;&#x675F;</p>
 </li>
 </ol>
-<p>Store.dispatch 正常情况下，参数只能是对象，这是就得使用中间件redux-thunk，改造dispatch，使得后者可以接受函数作为参数。</p>
-<p>​       Import thunk from ‘redux-thunk’</p>
-<p>​       Import { createStore, applyMiddleware }from ‘redux’</p>
-<p>​       Const store == createStore( reducer,applyMiddleware（thunk）)</p>
-<p>##十、redux-promise中间件</p>
-<p>​       另一种异步操作解决方案：Action Creator返回一个Promise对象。</p>
-<p>​       Import promiseMiddleware from ‘redux-promise’</p>
-<p>​       //其他如上</p>
-<p>两种写法：</p>
-<ol>
-<li>返回值是Promise对象</li>
+<p>Store.dispatch &#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53C2;&#x6570;&#x53EA;&#x80FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x662F;&#x5C31;&#x5F97;&#x4F7F;&#x7528;&#x4E2D;&#x95F4;&#x4EF6;redux-thunk&#xFF0C;&#x6539;&#x9020;dispatch&#xFF0C;&#x4F7F;&#x5F97;&#x540E;&#x8005;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x200B;       Import thunk from &#x2018;redux-thunk&#x2019;</p>
+<p>&#x200B;       Import { createStore, applyMiddleware }from &#x2018;redux&#x2019;</p>
+<p>&#x200B;       Const store == createStore( reducer,applyMiddleware&#xFF08;thunk&#xFF09;)</p>
+<p>##&#x5341;&#x3001;redux-promise&#x4E2D;&#x95F4;&#x4EF6;</p>
+<p>&#x200B;       &#x53E6;&#x4E00;&#x79CD;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;Action Creator&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x200B;       Import promiseMiddleware from &#x2018;redux-promise&#x2019;</p>
+<p>&#x200B;       //&#x5176;&#x4ED6;&#x5982;&#x4E0A;</p>
+<p>&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;</p>
+<ol class="ui list">
+<li>&#x8FD4;&#x56DE;&#x503C;&#x662F;Promise&#x5BF9;&#x8C61;</li>
 </ol>
 <p>Const fetchPosts =( dispatch, postTitle ) =&gt; new Promise( function ( resolve, reject ) {</p>
-<p>​       Dispatch( requestPosts( postTitle));</p>
-<p>​      Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
-<p>​              .then( response =&gt; { type: ‘’,payload: response.json()});</p>
+<p>&#x200B;       Dispatch( requestPosts( postTitle));</p>
+<p>&#x200B;      Returnfetch( <code>/some/API/${postTitle}.json</code>)</p>
+<p>&#x200B;              .then( response =&gt; { type: &#x2018;&#x2019;,payload: response.json()});</p>
 <p>})</p>
-<ol start="2">
-<li>Payload属性是一个Promise对象，这需要从redux-actions引入createAction方法</li>
+<ol start="2" class="ui list">
+<li>Payload&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x4ECE;redux-actions&#x5F15;&#x5165;createAction&#x65B9;&#x6CD5;</li>
 </ol>
-<p>Import {createAction } from ‘redux-actions’</p>
+<p>Import {createAction } from &#x2018;redux-actions&#x2019;</p>
 <p>componentDidMound(){</p>
-<p>​       const { dispatch, selectPost } =this.props</p>
-<p>​       dispatch(requestPosts( selectedPost ));</p>
-<p>​       dispatch( createAction( ‘FETCH_POSTS’,</p>
-<p>​       fetch(<code>/API/${postTitle}.json</code>).then(response =&gt; response.json() )</p>
+<p>&#x200B;       const { dispatch, selectPost } =this.props</p>
+<p>&#x200B;       dispatch(requestPosts( selectedPost ));</p>
+<p>&#x200B;       dispatch( createAction( &#x2018;FETCH_POSTS&#x2019;,</p>
+<p>&#x200B;       fetch(<code>/API/${postTitle}.json</code>).then(response =&gt; response.json() )</p>
 <p>));</p>
-<p>}      第二个dispatch方法是异步Action，只有操作接受，这个Action才会实际发出。createAction第二个参数必须是Promise对象</p>
-<p>#二、注意点</p>
-<p>##一、    HTML模板</p>
-<body><br><br>​       <div id="’root’"></div><br><br>​       &lt;script type=’text/babel’&gt;   //our code goes here!<br><br><br><br></body>
+<p>}      &#x7B2C;&#x4E8C;&#x4E2A;dispatch&#x65B9;&#x6CD5;&#x662F;&#x5F02;&#x6B65;Action&#xFF0C;&#x53EA;&#x6709;&#x64CD;&#x4F5C;&#x63A5;&#x53D7;&#xFF0C;&#x8FD9;&#x4E2A;Action&#x624D;&#x4F1A;&#x5B9E;&#x9645;&#x53D1;&#x51FA;&#x3002;createAction&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;Promise&#x5BF9;&#x8C61;</p>
+<p>#&#x4E8C;&#x3001;&#x6CE8;&#x610F;&#x70B9;</p>
+<p>##&#x4E00;&#x3001;    HTML&#x6A21;&#x677F;</p>
+<body><br><br>&#x200B;       <div id="&#x2019;root&#x2019;"></div><br><br>&#x200B;       &lt;script type=&#x2019;text/babel&#x2019;&gt;   //our code goes here!<br><br><br><br></body>
 
-<ol>
-<li><p>Script标签type属性为text/babel，这是React的独有语法，凡是用到的地方都得加上。</p>
+<ol class="ui list">
+<li><p>Script&#x6807;&#x7B7E;type&#x5C5E;&#x6027;&#x4E3A;text/babel&#xFF0C;&#x8FD9;&#x662F;React&#x7684;&#x72EC;&#x6709;&#x8BED;&#x6CD5;&#xFF0C;&#x51E1;&#x662F;&#x7528;&#x5230;&#x7684;&#x5730;&#x65B9;&#x90FD;&#x5F97;&#x52A0;&#x4E0A;&#x3002;</p>
 </li>
-<li><p>必须加载的三个库：react.js、react-dom.js、Browser.js。borwser.js作用是把JSX转为JS语法，很耗时间，上线时，将它放到服务器完成。</p>
+<li><p>&#x5FC5;&#x987B;&#x52A0;&#x8F7D;&#x7684;&#x4E09;&#x4E2A;&#x5E93;&#xFF1A;react.js&#x3001;react-dom.js&#x3001;Browser.js&#x3002;borwser.js&#x4F5C;&#x7528;&#x662F;&#x628A;JSX&#x8F6C;&#x4E3A;JS&#x8BED;&#x6CD5;&#xFF0C;&#x5F88;&#x8017;&#x65F6;&#x95F4;&#xFF0C;&#x4E0A;&#x7EBF;&#x65F6;&#xFF0C;&#x5C06;&#x5B83;&#x653E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x5B8C;&#x6210;&#x3002;</p>
 </li>
 </ol>
-<p>##二、    this.props.children</p>
-<p>没有子节点，值为undefined；一个子节点，object；多个，array。</p>
-<p>React.Children 用来便利子节点，不用考虑children的数据类型。</p>
-<p>##三、    PropTypes</p>
-<p>用于验证组件属性是否符合要求， 不符合则控制台报错</p>
-<p>##四、    获取真实Dom节点</p>
-<p>组件并不是真实DOM节点，所有变动都在虚拟DOM上发生，再将变动部分反映到真实DOM上，这算法叫DOM diff。</p>
-<p>​       组件获取真实DOM节点，需要ref属性</p>
-<p>例： 组件有个文本输入框，虚拟DOM拿不到用户输入，文本框必须有个ref属性。This.refs.[refName]会返回真实DOM节点。但是不许等到虚拟DOM插入文档后才能使用，否则报错</p>
-<p>##五、    表单</p>
-<p>用户在表单填入内容，属于用户跟组件的互动，不能用this.props读取，而要定义onChange的回调，用event.target.value读取。</p>
-<p>##六、    生命周期</p>
-<p>Mounting：已插入真实DOM</p>
-<p>Updating：已被重新渲染</p>
-<p>Unmounting：已移除真实DOM</p>
-<p>##七、    Ajax</p>
-<p>ComponentDidMount设置Ajax请求，请求成功，在setState重新渲染UI。</p>
-<p>#三、React-Redux </p>
-<p>React-Redux将左右组件分为两大类</p>
-<p>##一、    UI组件</p>
+<p>##&#x4E8C;&#x3001;    this.props.children</p>
+<p>&#x6CA1;&#x6709;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x503C;&#x4E3A;undefined&#xFF1B;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#xFF0C;object&#xFF1B;&#x591A;&#x4E2A;&#xFF0C;array&#x3002;</p>
+<p>React.Children &#x7528;&#x6765;&#x4FBF;&#x5229;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x4E0D;&#x7528;&#x8003;&#x8651;children&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p>##&#x4E09;&#x3001;    PropTypes</p>
+<p>&#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x7EC4;&#x4EF6;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x7B26;&#x5408;&#x8981;&#x6C42;&#xFF0C; &#x4E0D;&#x7B26;&#x5408;&#x5219;&#x63A7;&#x5236;&#x53F0;&#x62A5;&#x9519;</p>
+<p>##&#x56DB;&#x3001;    &#x83B7;&#x53D6;&#x771F;&#x5B9E;Dom&#x8282;&#x70B9;</p>
+<p>&#x7EC4;&#x4EF6;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x5B9E;DOM&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x6709;&#x53D8;&#x52A8;&#x90FD;&#x5728;&#x865A;&#x62DF;DOM&#x4E0A;&#x53D1;&#x751F;&#xFF0C;&#x518D;&#x5C06;&#x53D8;&#x52A8;&#x90E8;&#x5206;&#x53CD;&#x6620;&#x5230;&#x771F;&#x5B9E;DOM&#x4E0A;&#xFF0C;&#x8FD9;&#x7B97;&#x6CD5;&#x53EB;DOM diff&#x3002;</p>
+<p>&#x200B;       &#x7EC4;&#x4EF6;&#x83B7;&#x53D6;&#x771F;&#x5B9E;DOM&#x8282;&#x70B9;&#xFF0C;&#x9700;&#x8981;ref&#x5C5E;&#x6027;</p>
+<p>&#x4F8B;&#xFF1A; &#x7EC4;&#x4EF6;&#x6709;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x865A;&#x62DF;DOM&#x62FF;&#x4E0D;&#x5230;&#x7528;&#x6237;&#x8F93;&#x5165;&#xFF0C;&#x6587;&#x672C;&#x6846;&#x5FC5;&#x987B;&#x6709;&#x4E2A;ref&#x5C5E;&#x6027;&#x3002;This.refs.[refName]&#x4F1A;&#x8FD4;&#x56DE;&#x771F;&#x5B9E;DOM&#x8282;&#x70B9;&#x3002;&#x4F46;&#x662F;&#x4E0D;&#x8BB8;&#x7B49;&#x5230;&#x865A;&#x62DF;DOM&#x63D2;&#x5165;&#x6587;&#x6863;&#x540E;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x9519;</p>
+<p>##&#x4E94;&#x3001;    &#x8868;&#x5355;</p>
+<p>&#x7528;&#x6237;&#x5728;&#x8868;&#x5355;&#x586B;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x5C5E;&#x4E8E;&#x7528;&#x6237;&#x8DDF;&#x7EC4;&#x4EF6;&#x7684;&#x4E92;&#x52A8;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;this.props&#x8BFB;&#x53D6;&#xFF0C;&#x800C;&#x8981;&#x5B9A;&#x4E49;onChange&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x7528;event.target.value&#x8BFB;&#x53D6;&#x3002;</p>
+<p>##&#x516D;&#x3001;    &#x751F;&#x547D;&#x5468;&#x671F;</p>
+<p>Mounting&#xFF1A;&#x5DF2;&#x63D2;&#x5165;&#x771F;&#x5B9E;DOM</p>
+<p>Updating&#xFF1A;&#x5DF2;&#x88AB;&#x91CD;&#x65B0;&#x6E32;&#x67D3;</p>
+<p>Unmounting&#xFF1A;&#x5DF2;&#x79FB;&#x9664;&#x771F;&#x5B9E;DOM</p>
+<p>##&#x4E03;&#x3001;    Ajax</p>
+<p>ComponentDidMount&#x8BBE;&#x7F6E;Ajax&#x8BF7;&#x6C42;&#xFF0C;&#x8BF7;&#x6C42;&#x6210;&#x529F;&#xFF0C;&#x5728;setState&#x91CD;&#x65B0;&#x6E32;&#x67D3;UI&#x3002;</p>
+<p>#&#x4E09;&#x3001;React-Redux </p>
+<p>React-Redux&#x5C06;&#x5DE6;&#x53F3;&#x7EC4;&#x4EF6;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x7C7B;</p>
+<p>##&#x4E00;&#x3001;    UI&#x7EC4;&#x4EF6;</p>
 <p>Presentationalcomponent</p>
-<p>​       只负责UI呈现，不带任何业务逻辑；没有状态；数据都由this.props提供；不使用任何Redux的API。</p>
-<p>​       纯组件</p>
-<p>##二、    容器组件</p>
+<p>&#x200B;       &#x53EA;&#x8D1F;&#x8D23;UI&#x5448;&#x73B0;&#xFF0C;&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF1B;&#x6CA1;&#x6709;&#x72B6;&#x6001;&#xFF1B;&#x6570;&#x636E;&#x90FD;&#x7531;this.props&#x63D0;&#x4F9B;&#xFF1B;&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;Redux&#x7684;API&#x3002;</p>
+<p>&#x200B;       &#x7EAF;&#x7EC4;&#x4EF6;</p>
+<p>##&#x4E8C;&#x3001;    &#x5BB9;&#x5668;&#x7EC4;&#x4EF6;</p>
 <p>Containercomponent</p>
-<p>​       负责管理数据和业务逻辑,不负责UI呈现;带有内部状态;使用Redux的API.</p>
-<p>​       React-Redux规定,UI组件都由用户提供,容器组件则是由React-Redux自动提供</p>
-<p>##三、connect</p>
-<p>​       用于UI组件生成容器组件</p>
-<p>Import { connect }from ‘react-redux’</p>
-<p>ConstVisibleTodoList = connect（）（TodoList）；</p>
-<p>​       TodoList 为UI组件，VisibleTodoList通过React-Redux自动生成的容器组件。需要的信息：</p>
-<ol>
-<li><p>输入逻辑：外部数据（state对象）如何转换UI组件的参数</p>
+<p>&#x200B;       &#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x548C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;,&#x4E0D;&#x8D1F;&#x8D23;UI&#x5448;&#x73B0;;&#x5E26;&#x6709;&#x5185;&#x90E8;&#x72B6;&#x6001;;&#x4F7F;&#x7528;Redux&#x7684;API.</p>
+<p>&#x200B;       React-Redux&#x89C4;&#x5B9A;,UI&#x7EC4;&#x4EF6;&#x90FD;&#x7531;&#x7528;&#x6237;&#x63D0;&#x4F9B;,&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x5219;&#x662F;&#x7531;React-Redux&#x81EA;&#x52A8;&#x63D0;&#x4F9B;</p>
+<p>##&#x4E09;&#x3001;connect</p>
+<p>&#x200B;       &#x7528;&#x4E8E;UI&#x7EC4;&#x4EF6;&#x751F;&#x6210;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;</p>
+<p>Import { connect }from &#x2018;react-redux&#x2019;</p>
+<p>ConstVisibleTodoList = connect&#xFF08;&#xFF09;&#xFF08;TodoList&#xFF09;&#xFF1B;</p>
+<p>&#x200B;       TodoList &#x4E3A;UI&#x7EC4;&#x4EF6;&#xFF0C;VisibleTodoList&#x901A;&#x8FC7;React-Redux&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x3002;&#x9700;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ol class="ui list">
+<li><p>&#x8F93;&#x5165;&#x903B;&#x8F91;&#xFF1A;&#x5916;&#x90E8;&#x6570;&#x636E;&#xFF08;state&#x5BF9;&#x8C61;&#xFF09;&#x5982;&#x4F55;&#x8F6C;&#x6362;UI&#x7EC4;&#x4EF6;&#x7684;&#x53C2;&#x6570;</p>
 </li>
-<li><p>输出逻辑；动作如何变为Action对象，从UI传出去</p>
+<li><p>&#x8F93;&#x51FA;&#x903B;&#x8F91;&#xFF1B;&#x52A8;&#x4F5C;&#x5982;&#x4F55;&#x53D8;&#x4E3A;Action&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;UI&#x4F20;&#x51FA;&#x53BB;</p>
 </li>
 </ol>
-<p>Import { connect }from ‘react-redux’</p>
+<p>Import { connect }from &#x2018;react-redux&#x2019;</p>
 <p>ConstVisibleTodoList = connect(</p>
-<p>​       mapStateToProps,</p>
-<p>​       mapDispatchToProps</p>
+<p>&#x200B;       mapStateToProps,</p>
+<p>&#x200B;       mapDispatchToProps</p>
 <p>)( TodoList )</p>
-<p>##四、mapStateToProps</p>
-<p>​       建立一个从外部state对象到UI组件props对象的映射关系。返回一个对象，每个键值对就是一个映射</p>
-<p>Const mapStateToProps = （state（，props）） =&gt; {</p>
-<p>​       Return{ todos: getVisibleTodos( state.todos, state.visibilityFilter )}</p>
+<p>##&#x56DB;&#x3001;mapStateToProps</p>
+<p>&#x200B;       &#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4ECE;&#x5916;&#x90E8;state&#x5BF9;&#x8C61;&#x5230;UI&#x7EC4;&#x4EF6;props&#x5BF9;&#x8C61;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x3002;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6620;&#x5C04;</p>
+<p>Const mapStateToProps = &#xFF08;state&#xFF08;&#xFF0C;props&#xFF09;&#xFF09; =&gt; {</p>
+<p>&#x200B;       Return{ todos: getVisibleTodos( state.todos, state.visibilityFilter )}</p>
 <p>}</p>
-<p>接收state为参数，返回对象。getVisibleTodos从state计算todos的值。</p>
-<p>​       订阅Store，state更新时会自动执行，重新计算UI组件参数，从而触发UI组件重新渲染（<strong>使用**</strong>props<strong>**作为参数，如果容器组件参数发生变化，也会重新渲染</strong>？）</p>
-<p>​       <strong>作用：只绑定当前组件相关的**</strong>state<strong>**属性，可以保证没有额外的</strong></p>
-<p>##五、mapDispatchToProps</p>
-<p>​       建立UI组件到store.dispatch的映射。定义了哪些操作应当作为Action传给Store。可以是函数或者对象。</p>
+<p>&#x63A5;&#x6536;state&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x3002;getVisibleTodos&#x4ECE;state&#x8BA1;&#x7B97;todos&#x7684;&#x503C;&#x3002;</p>
+<p>&#x200B;       &#x8BA2;&#x9605;Store&#xFF0C;state&#x66F4;&#x65B0;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;&#xFF0C;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;UI&#x7EC4;&#x4EF6;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x89E6;&#x53D1;UI&#x7EC4;&#x4EF6;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF08;<strong>&#x4F7F;&#x7528;**</strong>props<strong>**&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x53C2;&#x6570;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x4F1A;&#x91CD;&#x65B0;&#x6E32;&#x67D3;</strong>&#xFF1F;&#xFF09;</p>
+<p>&#x200B;       <strong>&#x4F5C;&#x7528;&#xFF1A;&#x53EA;&#x7ED1;&#x5B9A;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x76F8;&#x5173;&#x7684;**</strong>state<strong>**&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x6CA1;&#x6709;&#x989D;&#x5916;&#x7684;</strong></p>
+<p>##&#x4E94;&#x3001;mapDispatchToProps</p>
+<p>&#x200B;       &#x5EFA;&#x7ACB;UI&#x7EC4;&#x4EF6;&#x5230;store.dispatch&#x7684;&#x6620;&#x5C04;&#x3002;&#x5B9A;&#x4E49;&#x4E86;&#x54EA;&#x4E9B;&#x64CD;&#x4F5C;&#x5E94;&#x5F53;&#x4F5C;&#x4E3A;Action&#x4F20;&#x7ED9;Store&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x51FD;&#x6570;&#x6216;&#x8005;&#x5BF9;&#x8C61;&#x3002;</p>
 <p>Const mapDispatchToProps = ( dispatch,ownProps ) =&gt; {</p>
-<p>​       Return{ onClick: () =&gt; {</p>
-<p>​       Dispatch({type: ‘Action_Name’, filter:ownProps.filter });}</p>
+<p>&#x200B;       Return{ onClick: () =&gt; {</p>
+<p>&#x200B;       Dispatch({type: &#x2018;Action_Name&#x2019;, filter:ownProps.filter });}</p>
 <p>};</p>
 <p>}</p>
-<p>返回的对象每个键值对都是一个映射，定义UI组件的参数，怎样发Action。    </p>
-<p>​       如果是一个对象，键名是对应UI组件的同名参数，键值应该是函数，作为Action creator，返回的Action由Redux自动发出</p>
+<p>&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6BCF;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6620;&#x5C04;&#xFF0C;&#x5B9A;&#x4E49;UI&#x7EC4;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x600E;&#x6837;&#x53D1;Action&#x3002;    </p>
+<p>&#x200B;       &#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x952E;&#x540D;&#x662F;&#x5BF9;&#x5E94;UI&#x7EC4;&#x4EF6;&#x7684;&#x540C;&#x540D;&#x53C2;&#x6570;&#xFF0C;&#x952E;&#x503C;&#x5E94;&#x8BE5;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x4F5C;&#x4E3A;Action creator&#xFF0C;&#x8FD4;&#x56DE;&#x7684;Action&#x7531;Redux&#x81EA;&#x52A8;&#x53D1;&#x51FA;</p>
 <p>Const mapDispatchToProps = {</p>
-<p>​       onClick:(filter) =&gt; { type: ‘Action_Name’, filter: filter }</p>
+<p>&#x200B;       onClick:(filter) =&gt; { type: &#x2018;Action_Name&#x2019;, filter: filter }</p>
 <p>}</p>
-<p>##六、<provider>组件 </provider></p>
-<p>​       原理：React组件的context属性。</p>
-<p>作用：让容器组件拿到state（state对象作为参数传入容器组件，容器组件可能在很深的层级，state传递下去很麻烦）。</p>
-<p>Import { Provider } from ‘react-redux’</p>
-<p>Import todoApp from ‘./reducers’</p>
+<p>##&#x516D;&#x3001;<provider>&#x7EC4;&#x4EF6; </provider></p>
+<p>&#x200B;       &#x539F;&#x7406;&#xFF1A;React&#x7EC4;&#x4EF6;&#x7684;context&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8BA9;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x62FF;&#x5230;state&#xFF08;state&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#xFF0C;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x53EF;&#x80FD;&#x5728;&#x5F88;&#x6DF1;&#x7684;&#x5C42;&#x7EA7;&#xFF0C;state&#x4F20;&#x9012;&#x4E0B;&#x53BB;&#x5F88;&#x9EBB;&#x70E6;&#xFF09;&#x3002;</p>
+<p>Import { Provider } from &#x2018;react-redux&#x2019;</p>
+<p>Import todoApp from &#x2018;./reducers&#x2019;</p>
 <p>Let store = createStore(todoApp)</p>
 <p>Render(</p>
-<p>​       &lt;Providerstore={store}&gt; <app>,</app></p>
-<p>​       Document.getElementById(‘root’)</p>
+<p>&#x200B;       &lt;Providerstore={store}&gt; <app>,</app></p>
+<p>&#x200B;       Document.getElementById(&#x2018;root&#x2019;)</p>
 <p>)</p>
-<p>​       App所有子组件默认都可以拿到state</p>
-<p>##七、常用函数</p>
-<ol>
-<li>createStore（reducer，[initState, enhancer]）</li>
+<p>&#x200B;       App&#x6240;&#x6709;&#x5B50;&#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x90FD;&#x53EF;&#x4EE5;&#x62FF;&#x5230;state</p>
+<p>##&#x4E03;&#x3001;&#x5E38;&#x7528;&#x51FD;&#x6570;</p>
+<ol class="ui list">
+<li>createStore&#xFF08;reducer&#xFF0C;[initState, enhancer]&#xFF09;</li>
 </ol>
-<p>enhancer：中间件</p>
-<ol start="2">
-<li>combineRecuder（reducers）</li>
+<p>enhancer&#xFF1A;&#x4E2D;&#x95F4;&#x4EF6;</p>
+<ol start="2" class="ui list">
+<li>combineRecuder&#xFF08;reducers&#xFF09;</li>
 </ol>
-<p>多个子函数合并后，相当于整体函数为state特定字段进行映射产生特定函数。</p>
-<ol start="3">
-<li>applyMiddleware（…middlewares）</li>
+<p>&#x591A;&#x4E2A;&#x5B50;&#x51FD;&#x6570;&#x5408;&#x5E76;&#x540E;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6574;&#x4F53;&#x51FD;&#x6570;&#x4E3A;state&#x7279;&#x5B9A;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x6620;&#x5C04;&#x4EA7;&#x751F;&#x7279;&#x5B9A;&#x51FD;&#x6570;&#x3002;</p>
+<ol start="3" class="ui list">
+<li>applyMiddleware&#xFF08;&#x2026;middlewares&#xFF09;</li>
 </ol>
-<p>输入middlewares数组，返回函数，函数以creteStore为参数。</p>
-<ol start="4">
-<li>compose（…function）</li>
+<p>&#x8F93;&#x5165;middlewares&#x6570;&#x7EC4;&#xFF0C;&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x4EE5;creteStore&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<ol start="4" class="ui list">
+<li>compose&#xFF08;&#x2026;function&#xFF09;</li>
 </ol>
-<p>从右到左组合多个函数，</p>
-<p>Compose（funcA, funcB, funcC）等价于compose(funcA(funcB(funcC())))</p>
-<p>为了避免深度嵌套函数时，代码的向右偏移。</p>
-<ol start="5">
-<li><providerstore> 和 connect（[mapStateToProps],[mapDispatchToProps],[mergeProps], [options]）</providerstore></li>
+<p>&#x4ECE;&#x53F3;&#x5230;&#x5DE6;&#x7EC4;&#x5408;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;</p>
+<p>Compose&#xFF08;funcA, funcB, funcC&#xFF09;&#x7B49;&#x4EF7;&#x4E8E;compose(funcA(funcB(funcC())))</p>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6DF1;&#x5EA6;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4EE3;&#x7801;&#x7684;&#x5411;&#x53F3;&#x504F;&#x79FB;&#x3002;</p>
+<ol start="5" class="ui list">
+<li><providerstore> &#x548C; connect&#xFF08;[mapStateToProps],[mapDispatchToProps],[mergeProps], [options]&#xFF09;</providerstore></li>
 </ol>
-<p>）</p>
-<p>#四、Redux库文件</p>
-<p>##一、    react-redux</p>
-<p>##二、    redux-devtools</p>
-<p>实时监控Redux状态书的Store</p>
-<p>​       Redux-devtools</p>
-<p>​       Redux-log-monitor</p>
-<p>​       Redux-dock-monitor</p>
-<p>创建DevTools组件</p>
-<p>Import {createDevTools } from ‘redux-devtools’</p>
-<p>Import LogMonitorfrom ‘redux-devtools-log-monitor’//(组件)</p>
-<p>Const DevTools =createDevTools( // JSX代码 )</p>
-<p>​       createDevTools 创建的组件有个特殊的静态方法instrument（），返回一个store增强器，放在<a href="">applyMiddleware</a>后，因为apply可能存在异步行为，为确保说有actions显示在store中。</p>
-<p>##三、    redux-thunk</p>
-<p>统一异步和同步的调用方式，把异步过程放在action级别解决，对component没有影响</p>
-<p>##四、    react-router-redux</p>
-<p>协调 Redux和React Router两个库，加强了Router库中history这个实例，允许history中接受到的变化反映到state去。</p>
-<p>​       History + store（redux） -&gt; react-router-redex -&gt; 加强history -&gt; react-router</p>
-<p>​       所有页面导航、App导航，加强版history会首先将新的路径通过Redux Store传递，然后通过React Router更新组件树。</p>
-<p>​       <strong>查看导航事件</strong></p>
-<p> History.listen监听加强版history</p>
-<p>​       Const history= syncHistoryWithStore（browserHistory，store）</p>
-<p>​       History.listen( location =&gt;analyticsService.track(location.pathname ))</p>
+<p>&#xFF09;</p>
+<p>#&#x56DB;&#x3001;Redux&#x5E93;&#x6587;&#x4EF6;</p>
+<p>##&#x4E00;&#x3001;    react-redux</p>
+<p>##&#x4E8C;&#x3001;    redux-devtools</p>
+<p>&#x5B9E;&#x65F6;&#x76D1;&#x63A7;Redux&#x72B6;&#x6001;&#x4E66;&#x7684;Store</p>
+<p>&#x200B;       Redux-devtools</p>
+<p>&#x200B;       Redux-log-monitor</p>
+<p>&#x200B;       Redux-dock-monitor</p>
+<p>&#x521B;&#x5EFA;DevTools&#x7EC4;&#x4EF6;</p>
+<p>Import {createDevTools } from &#x2018;redux-devtools&#x2019;</p>
+<p>Import LogMonitorfrom &#x2018;redux-devtools-log-monitor&#x2019;//(&#x7EC4;&#x4EF6;)</p>
+<p>Const DevTools =createDevTools( // JSX&#x4EE3;&#x7801; )</p>
+<p>&#x200B;       createDevTools &#x521B;&#x5EFA;&#x7684;&#x7EC4;&#x4EF6;&#x6709;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;instrument&#xFF08;&#xFF09;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;store&#x589E;&#x5F3A;&#x5668;&#xFF0C;&#x653E;&#x5728;<a href="">applyMiddleware</a>&#x540E;&#xFF0C;&#x56E0;&#x4E3A;apply&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5F02;&#x6B65;&#x884C;&#x4E3A;&#xFF0C;&#x4E3A;&#x786E;&#x4FDD;&#x8BF4;&#x6709;actions&#x663E;&#x793A;&#x5728;store&#x4E2D;&#x3002;</p>
+<p>##&#x4E09;&#x3001;    redux-thunk</p>
+<p>&#x7EDF;&#x4E00;&#x5F02;&#x6B65;&#x548C;&#x540C;&#x6B65;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x628A;&#x5F02;&#x6B65;&#x8FC7;&#x7A0B;&#x653E;&#x5728;action&#x7EA7;&#x522B;&#x89E3;&#x51B3;&#xFF0C;&#x5BF9;component&#x6CA1;&#x6709;&#x5F71;&#x54CD;</p>
+<p>##&#x56DB;&#x3001;    react-router-redux</p>
+<p>&#x534F;&#x8C03; Redux&#x548C;React Router&#x4E24;&#x4E2A;&#x5E93;&#xFF0C;&#x52A0;&#x5F3A;&#x4E86;Router&#x5E93;&#x4E2D;history&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5141;&#x8BB8;history&#x4E2D;&#x63A5;&#x53D7;&#x5230;&#x7684;&#x53D8;&#x5316;&#x53CD;&#x6620;&#x5230;state&#x53BB;&#x3002;</p>
+<p>&#x200B;       History + store&#xFF08;redux&#xFF09; -&gt; react-router-redex -&gt; &#x52A0;&#x5F3A;history -&gt; react-router</p>
+<p>&#x200B;       &#x6240;&#x6709;&#x9875;&#x9762;&#x5BFC;&#x822A;&#x3001;App&#x5BFC;&#x822A;&#xFF0C;&#x52A0;&#x5F3A;&#x7248;history&#x4F1A;&#x9996;&#x5148;&#x5C06;&#x65B0;&#x7684;&#x8DEF;&#x5F84;&#x901A;&#x8FC7;Redux Store&#x4F20;&#x9012;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;React Router&#x66F4;&#x65B0;&#x7EC4;&#x4EF6;&#x6811;&#x3002;</p>
+<p>&#x200B;       <strong>&#x67E5;&#x770B;&#x5BFC;&#x822A;&#x4E8B;&#x4EF6;</strong></p>
+<p> History.listen&#x76D1;&#x542C;&#x52A0;&#x5F3A;&#x7248;history</p>
+<p>&#x200B;       Const history= syncHistoryWithStore&#xFF08;browserHistory&#xFF0C;store&#xFF09;</p>
+<p>&#x200B;       History.listen( location =&gt;analyticsService.track(location.pathname ))</p>
 
                         
                     </div>
@@ -450,7 +450,7 @@
             <div class="column nav-left">
                 
 
-                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>前一篇</a>
 
                 
             </div>
@@ -459,7 +459,7 @@
 
                 <a href="/2018/05/10/React-Bootstrap学习/" class="ui tiny button">
                     
-                    (No Title)
+                    (无标题)
                     
                     <i class="angle right icon"></i></a>
                 
